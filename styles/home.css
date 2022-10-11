@@ -1,0 +1,700 @@
+
+#blackdiv{
+    /* margin-top: 140px; */
+    height: 40px;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+#blackdiv h6{
+    margin-top: 10px;
+    margin-right: 5px;
+
+}
+#pnare{
+    margin-top: 9px;
+
+}
+#threeadd{
+    width: 94%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,480px);
+    gap: 20px;
+    margin-top: 25px;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+#add1{
+    /* border: 1px solid black; */
+    background-image: url(https://cdn.shopify.com/s/files/1/0248/3473/6191/files/asapimage---533-x-644-px_540x.jpg?v=1650550832);
+    background-size:cover;
+    background-origin: border-box;
+    /* background-position: 30px; */
+    background-position-x: center;
+    background-blend-mode: darken;
+}
+#add2{
+    /* border: 1px solid black; */
+    background-image: url(https://cdn.shopify.com/s/files/1/0248/3473/6191/files/WEB_ASSET_2_540x.jpg?v=1650894933);
+    background-size:cover;
+    background-origin: border-box;
+    /* background-position: 30px; */
+    background-position-x: center;
+    background-blend-mode: darken;
+}
+#add3{
+    /* border: 1px solid black; */
+    background-image: url(https://cdn.shopify.com/s/files/1/0248/3473/6191/files/womens_tops_2_540x.jpg?v=1630508297);
+    background-size:cover;
+    background-origin: border-box;
+    /* background-position: 30px; */
+    background-position-x: center;
+    background-blend-mode: darken;
+}
+
+#threeadd>div>div:first-child{
+  
+    width: 350px;
+    margin: auto;
+    margin-top: 200px;
+    color: white;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing: .2em;
+    /* text-shadow: 5px solid black; */
+}
+#threeadd>div>div:nth-child(2){
+    color: white;
+    font-size:22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Vidaloka', serif;
+    text-rendering: inherit;
+    /* letter-spacing: 0em; */
+}
+
+#threeadd>div>div:nth-child(3){
+    color: white;
+    font-size:25px;
+    margin-top: -20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* text-shadow: 5px solid black; */
+    
+}
+#threeadd button{
+    width: auto;
+    height: 40px;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#socak{
+    width: 96%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+#socak h3{
+
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 0.1em;
+    font-size: 40px;
+}
+#socakprod{
+ 
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    letter-spacing: .2em;
+    margin-top: 50px;
+}
+#socakprod>div{
+    width: 250px;
+    height: 300px;
+    /* border: 1px solid blue; */
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#socakprod>div>div{
+    padding: 15px;
+    width: 200px;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+}
+#socakprod img{
+    width:100%;
+}
+
+#goggle img{
+
+    margin-top:100px;
+}
+#tops img{
+
+    height: 200px;
+    /* margin-top:20px; */
+}
+
+#carouselExampleCaptions1{
+    font-family: 'Vidaloka', serif;
+
+   
+}
+#carouselExampleCaptions2{
+    font-family: 'Vidaloka', serif;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+#carouselExampleCaptions1 img{
+    height: 600px;
+}
+#carouselExampleCaptions2 img{
+    height: 500px;
+}
+#carouselExampleCaptions1 .sheadak>h1{
+    
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: center;
+}
+#carouselExampleCaptions1 .sheadak>p{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+#carouselExampleCaptions1 .sheadak>button{
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border:none;
+    letter-spacing: .2em;
+    margin-bottom: 10px;
+}
+
+#carouselExampleCaptions2 .sheadak>h1{
+    
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+}
+#carouselExampleCaptions2 .sheadak>p{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+#carouselExampleCaptions2 .sheadak>button{
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    border:none;
+    letter-spacing: 0.2em;
+}
+
+@media all and (min-width:120px) and (max-width:480px){
+
+    #blackdiv h6{
+        margin-top: 5px;
+        margin-right: 5px;
+        /* font-size: 10px; */
+    }
+     #blackdiv{
+         height: 50px;
+         font-size: 10px;
+    }
+
+    #threeadd{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,440px);
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+    #threeadd>div>div:first-child{
+        width: 300px;
+        margin-top: 100px;
+        font-size: 12px;
+        letter-spacing: 0em;
+
+    }
+    #threeadd>div>div:nth-child(2){
+        font-size: 14px;
+        margin-top:5px
+    }
+
+    #threeadd>div>div:nth-child(3){
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    #threeadd button{
+        height: 30px;
+        letter-spacing: .1em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #socakprod{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+
+    #socask h3{
+        font-size: 20px;
+    }
+
+    #socakprod p{
+        font-size: 12px;
+    }
+    #socakprod>div{
+        width: 200px;
+        height: 200px;
+        margin-top: 15px;
+    }
+    #socakprod>div>div{
+        width: 160px;
+        height: 220px;
+    }
+
+    #carouselExampleCaptions1 .sheadak>h1{
+        font-size: 40px;
+        text-align: center;
+        
+    }
+
+    #carouselExampleCaptions1 .sheadak>p{
+        font-size: 15px
+    }
+
+    #carouselExampleCaptions1 .sheadak>button{
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+        border:none;
+        letter-spacing: .1em;
+        margin-bottom: 10px;
+    }
+    #carouselExampleCaptions2 .sheadak>h1{
+    
+        /* text-transform: uppercase; */
+        font-size: 30px;
+        text-align: center;
+    }
+    #carouselExampleCaptions2 .sheadak>p{
+        font-size: 10px;
+        text-align: center;
+    }
+    #carouselExampleCaptions2 .sheadak>button{
+        font-size: 15px;
+        padding : 2px 5px 2px 5px;
+    }
+  
+
+    #carouselExampleCaptions1 img{
+        height: 300px;
+    }
+    #carouselExampleCaptions2 img{
+        height: 200px;
+    }
+}
+
+@media all and (min-width:480px) and (max-width:760px){
+
+    #blackdiv h6{
+        margin-top: 5px;
+        margin-right: 5px;
+        /* font-size: 10px; */
+    }
+     #blackdiv{
+         font-size: 12px;
+    }
+
+    #threeadd{
+        grid-template-columns: repeat(1,550px);
+        grid-template-rows: repeat(3,450px);
+        margin: auto;
+        margin-top: 20px;
+        margin-left:8%;
+    }
+
+    #threeadd>div>div:first-child{
+        width: 320px;
+        margin-top: 150px;
+        font-size: 14px;
+        letter-spacing: .1em;
+
+    }
+    #threeadd>div>div:nth-child(2){
+        font-size: 12px;
+        margin-top:5px
+    }
+
+    #threeadd>div>div:nth-child(3){
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    #threeadd button{
+        height: 30px;
+        letter-spacing: .2em;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    #socak{
+       margin: auto;
+       margin-left: 12%; 
+    }
+    #socakprod{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+
+    #socak h3{
+        font-size: 15px;
+    }
+
+    #socakprod p{
+        font-size: 12px;
+    }
+    
+    #socakprod>div{
+        width: 200px;
+        height: 200px;
+        margin-top: 15px;
+    }
+    #socakprod>div>div{
+        width: 160px;
+        height: 220px;
+    }
+
+    #carouselExampleCaptions1 .sheadak>h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #carouselExampleCaptions1 .sheadak>p{
+        font-size: 15px
+    }
+
+    #carouselExampleCaptions1 .sheadak>button{
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+        border:none;
+        letter-spacing: .1em;
+        margin-bottom: 10px;
+    }
+    #carouselExampleCaptions2 .sheadak>h1{
+    
+        /* text-transform: uppercase; */
+        font-size: 30px;
+        text-align: center;
+    }
+    #carouselExampleCaptions2 .sheadak>p{
+        font-size: 10px;
+        text-align: center;
+    }
+    #carouselExampleCaptions2 .sheadak>button{
+        font-size: 15px;
+        padding : 2px 5px 2px 5px;
+    }
+   
+
+    #carouselExampleCaptions1 img{
+        height: 350px;
+    }
+    #carouselExampleCaptions2 img{
+        height: 300px;
+    }
+}
+
+
+/* Rajshreeeeeeeeee  */
+.bodyFirstTitle>h1{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Vidaloka', serif;
+}
+.bodyFirstDetails,.bodyFirstDetails1{
+    display: grid;
+    width:97%;
+    /* height:200px; */
+    grid-template-columns: repeat(5,1fr);
+    gap:18px;
+   margin-left: 40px;
+   margin-right: 40px;
+   font-family: 'Marcellus', serif;
+}
+.bodyFirstDetails>div>img{
+    height:280px;
+    width:260px;
+}
+.bodyFirstDetails1>div>img{
+    height:290px;
+    width:200px;
+}
+.bodyFirstDetails>div{
+    border:1px solid black;
+    border: none;
+}
+.productDetails>h3{
+    font-weight: 100;
+    font-size: medium;
+}
+.viewall{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width:130px;
+    margin-left:240%;
+    letter-spacing: 4px;
+}
+.productDetails>p{
+    display: inline-block;
+    
+}
+.productDetails>p:last-child{
+    color:red;
+}
+.productDetails>p:first-child{
+    text-decoration: line-through;
+}
+.shopNow{
+    display: none;
+}
+.footerFirstDetails>div>img{
+    height:400px;
+    width:400px;
+    /* border: 1px solid black; */
+}
+.footerFirstDetails{
+    font-family: 'Marcellus', serif;
+    display: grid;
+    width:97%;
+    margin-top:50px ;
+    margin-left:40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    border-top:1px solid rgb(120, 116, 116);
+    text-align: center;
+}
+.footerFirstDetails>div{
+    border: 1px solid black;
+    width:450px;
+    border:none;
+}
+
+#footerpic img{
+     width:460px;
+     height:350px;
+     margin-top:30px;
+}
+.pDetails>h2{
+    font-weight: 400;
+   text-align: center;
+   font-family: 'Tienne', serif;;
+}
+.pDetails{
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Tienne', serif;;
+}
+#disc{
+    margin-top: 15px;
+    text-align: center;
+    /* margin-left: 30%; */
+    width:auto;
+    padding:10px 15px 10px 15px;
+    background-color: white;
+    letter-spacing: 0.2em;
+    border:1px solid rgb(153, 148, 148);
+    font-family: 'Marcellus', serif;
+}
+.footer{
+    width:100%;
+    padding-top:60px;
+    padding-bottom: 100px;
+    background-color: #e6e6e6;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.col-1,.col-2{
+   
+    text-align: left;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.col-1>h4{
+    /* margin-left: 35px; */
+    padding-left: 22px;
+    width: 150px;
+}
+.footer div h3{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.col-1 a,.col-2 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    /* margin-left: 40px; */
+    padding-left: 22px;
+    width: 300px;
+}
+.col-2 {
+    padding-top: 30px;
+    margin-right: 60px;
+    height:100px;
+    font-weight: 500;
+    
+}
+#form input,#buttonb {
+    width:290px;
+    height:30px;
+    text-align: center;
+    margin-bottom:24px;
+    outline: none; 
+}
+#buttonb{
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.social-icons{
+    display: flex;
+    margin-right: 160px;
+    margin-top:10px;
+}
+.social-icons i{
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#imgbg>img{
+    width:270px;
+    height:100px;
+    /* border:1px solid black; */
+    margin-top: 50px;
+}
+.col-3{
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.col-3>h4{
+
+    width:300px;
+    letter-spacing: 0.2em;
+}
+#goggldiv{
+    width: 260px;
+    height:260px;
+}
+#goggldiv img{
+     width:240px;
+     height:70px;
+     margin-top:80px;
+}
+
+.viewport{
+    background-color: white;
+    color:black;
+    margin-left: 47%;
+    border:1px solid rgb(165 159 159);
+    height: 40px;
+    width:120px;
+    letter-spacing: 4px;
+}
+
+@media all and (min-width:480px) and (max-width:760px){
+
+    .footerFirstDetails{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        margin-left: auto;
+    }
+    .bodyFirstDetails,.bodyFirstDetails1{
+        overflow: scroll;
+        margin-left: auto;
+        width:98%;
+    }
+  .viewport{
+     margin-bottom: 20px;
+  }
+  .productDetails>p{
+    display: inline-block;
+    
+}
+#footerpic img{
+    width:400px;
+    margin-left: 0px;
+   
+}
+.footer .col-3{
+    width: 200px;
+    margin-top: 150px;
+}
+.footer{
+   grid-template-columns: repeat(1,1fr);
+   grid-template-rows: auto;
+   width:100%;
+}
+.col-3{
+    margin-left: 30px;
+}
+}
+
+@media all and (min-width:120px) and (max-width:480px){
+
+    .footerFirstDetails{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: auto;
+    }
+    .bodyFirstDetails,.bodyFirstDetails1{
+        overflow: scroll;
+        margin-left: auto;
+    }
+    .productDetails>p{
+        display: inline-block;
+        
+    }
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        width:100%;
+     }
+     .col-3{
+        margin-left: 30px;
+    }
+    #footerpic img{
+        width:400px;
+        margin-left: 0px;
+       
+    }
+    .footer .col-3 h4{
+        width: 200px;
+        margin-top: 150px;
+    }
+    .pDetails h2{
+        margin: auto;
+        width: 300px;
+    }
+}
+#form{
+    width: 200px;
+}
