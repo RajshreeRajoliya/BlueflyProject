@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN FORM</title>
+  <style>
+    #loginform {
+      margin: auto;
+        width: 30%;
+        box-sizing: border-box;
+        text-align: center;
+        text-transform: uppercase;
+        
+      }
+      .input {
+        width: 98%;
+        height: 25px;
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+      #loginform label {
+        display: flex;
+        justify-content: space-between;
+      }
+      .submit {
+        width: 100%;
+        height: 40px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 13px;
+        padding: 13px 20px;
+      }
+      #submit {
+        border: 0;
+        margin-top: 5px;
+        color: black;
+        background-color: white;
+      }
+      .password {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        /* border: 1px solid red; */
+      }
+      @media only screen and (max-width: 600px) {
+        #loginform {
+          width: 60%;
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        #loginform {
+          width: 60%;
+        }
+      }
+  </style>
+</head>
+<body>
+  <form action="" id="loginform">
+    <h1>LOGIN</h1>
+    <label for="UsearEmail">Email</label> <br/>
+    <input  class="input" id="UsearEmail" type="email"> <br/>
+    <div class="password">
+      <label for="UserPassword">Password</label> 
+      <label for="UserPassword">Forget Password</label> 
+      </div>
+    <input  class="input" id="UsearPassword" type="password"> <br/>
+    <button class="submit"> SIGN IN</button>
+    </form>
+    <button class="submit" id="submit">CREATE ACCOUNT</button>
+</body>
+</html>
+<script>
+   var log = false;
+  const login = (event) => {
+    
+    event.preventDefault();
+    let form = document.getElementById("loinform");
+    let Email = form.UsearEmail.value;
+    let Password = form.UserPassword.value;
+    let Users = JSON.parse(localStorage.getItem("Users")) || [];
+    // console.log(Users);
+
+    for (let i = 0; i < Users.length; i++) {
+      // console.log(Users);
+      if (Users[i].Email == Email && Users[i].Password == Password) {
+        alert("login Successful!");
+        localStorage.setItem("User", JSON.stringify(Users[i]));
+        log = true;
+        break;
+      }
+    }
+    if (log == false) {
+      alert("login failed!");
+    }
+  };
+
+const movetoregister=()=>{
+  window.location.href="signup.html"
+}
+
+  document.getElementById("submit").addEventListener("click",movetoregister)
+</script>
