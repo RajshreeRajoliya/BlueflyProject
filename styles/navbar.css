@@ -1,0 +1,494 @@
+
+#navbar{
+    /* border: 1px solid black; */
+    height: 130px;
+    width: 100%;
+    background-color: white;
+    position:relative;
+    font-family: 'Marcellus', serif;
+    
+}
+#navbar{
+    top: 0px;
+}
+#navtop{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-family: 'Marcellus', serif;
+}
+#blank{
+    width: 30%;
+}
+#logo img{
+    height: 32px;
+    width:200px;
+}
+#third{
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    padding-right: 30px;
+    margin-top:-10px;
+}
+#third>div:first-child{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;   
+    display: flex;
+    font-size: 14px;
+    padding-top: 5px;
+    /* margin-top: 10px; */
+}
+#third>div:first-child p {
+    margin-top: 10px;
+}
+#third > div:first-child img{
+    width: 26px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px
+}
+
+#user img{
+    width: 28px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: 25px
+}
+
+#bag img{
+    width: 28px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: 25px
+}
+
+#navbottom{
+    display: flex;
+    justify-content: space-evenly;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.2em;
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#navbottom > div{
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 7.5px 15px;
+    white-space: nowrap;
+    color: #000;
+}
+/* #navbottom > div:hover{
+
+    border-bottom: 2px solid black;
+} */
+
+#navbottom>div:last-child {
+    text-decoration: none;
+    color: red; ;
+}
+
+/* Rajshree */
+#navbottom {
+    /* margin: 10px; */
+    /* padding: 10px; */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 25px; */
+    /* font-size: 16px; */
+    /* border: 1px solid blue; */
+    margin-left: 10px;
+    font-family: 'Marcellus', serif;
+}
+
+#navbottom>div {
+    /* border: 1px solid black; */
+    height: 40%;
+    /* align-items: center; */
+    /* vertical-align: baseline; */
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+
+/* Build a Routine Drop Down starts here*/
+
+.BAR {
+    position: relative;
+}
+
+.drop {
+    display: none;
+}
+
+.outside,
+.outsideSkin,
+.outsideHair,
+.outsideMakeup,
+.outsideTools,
+.outsideBath,
+.outsideSelf,
+.outsideFragrance,
+.outsideNew,
+.outsideOld {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    /* border: 1px solid black; */
+    padding-top: 20px;
+    /* padding-top: 5px; */
+    font-family: 'Marcellus', serif;
+}
+
+.inside {
+    /* border-top: 1px solid rgb(46, 51, 55); */
+    width: 245px;
+    margin: 10px;
+    font-family: 'Marcellus', serif;
+}
+.outsideMakeup>.inside{
+    width:200px;
+    font-size: small;
+}
+.inside div {
+    padding: 5px;
+}
+
+.inside>div>a {
+    text-decoration: none;
+    color: black;
+}
+
+.inside div:first-child>a {
+    font-weight: 550;
+}
+
+.inside div:hover {
+    background-color: rgb(240, 238, 238);
+}
+
+.inside div:nth-child(1) {
+    margin: 10px 0px;
+}
+
+.BAR:hover .drop {
+    display: block;
+}
+
+
+/* pos for other drop Downs */
+
+.outside {
+    right: -1500%;
+    width: 1425px;
+    font-family: 'Marcellus', serif;
+}
+
+.outsideSkin {
+    right: -382%;
+    width:1425px;
+}
+
+.outsideHair {
+    right: -630%;
+    width:1225px;
+}
+
+.outsideMakeup {
+    right: -850%;
+    width:1425px;
+}
+
+.outsideTools {
+    left: -705%;
+    width:1325px;
+}
+
+.outsideBath {
+    left: -175%;
+    width: 900px;
+    height:auto;
+}
+
+.outsideSelf {
+    left: -360%;
+    width: 1415px;
+}
+
+.outsideFragrance {
+    left: -390%;
+    width: 725px;
+}
+
+.outsideNew {
+    left: -750%;
+    width: 905px;
+}
+
+.outsideOld {
+    left: -630%;
+    width: 955px;
+}
+.srk{
+    letter-spacing: 4em;
+}
+/* Rajshree */
+.bodylast>div>img{
+    height:275px;
+    width:230px;
+    /* border:1px solid black; */
+    margin-top:50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    
+}
+
+.productlast>p{
+    text-align: center;
+    color:black;
+    font-size: small;
+    text-transform: uppercase;
+}
+.productlast>p:first-child{
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+}
+
+.drop2>div>img{
+    height:150px;
+    width:180px;
+    margin-top:50px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+@media all and (min-width:480px) and (max-width:760px){
+    #navbottom{
+        display: none;
+    }
+    #navbar{
+        height: 100px;
+    }
+    #navtop{
+        margin-top: 15px;
+    }
+    #blank{
+        width: 25%;
+    }
+    #logo img{
+        height: 22px;
+        width: 100px;
+    }
+    #third{
+        padding-right: 10px;
+        margin-right: 100px;
+    }
+    #third>div:first-child{
+        font-size: 8px;
+        padding-top: 2px;
+        letter-spacing: 0.1em;
+    }
+    #third > div:first-child img{
+        width: 12px;
+        height: 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #user img{
+        width: 15px;
+        height: 12px;
+        margin-top: 12px;
+        margin-left: 5px
+    }
+
+    #bag img{
+        width: 15px;
+        height: 12px;
+        margin-top: 12px;
+        margin-left:5px
+    }
+}
+
+@media all and (min-width:120px) and (max-width:480px){
+    #navbottom{
+        display: none;
+    }
+    #navbar{
+        height: 80px;
+    }
+    #navtop{
+        margin-top: 15px;
+    }
+    #blank{
+        width: 25%;
+    }
+    #logo img{
+        height: 20px;
+        width: 100px;
+    }
+    #third{
+        padding-right: 10px;
+        margin-right: 50px;
+    }
+    #third>div:first-child{
+        font-size: 8px;
+        padding-top: 2px;
+        letter-spacing: 0em;
+    }
+    #third > div:first-child img{
+        width: 12px;
+        height: 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #user img{
+        width: 15px;
+        height: 12px;
+        margin-top: 12px;
+        margin-left: 5px
+    }
+
+    #bag img{
+        width: 15px;
+        height: 12px;
+        margin-top: 12px;
+        margin-left:5px
+    }
+}
+
+
+
+
+/* cart  */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    height: 200px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+.cart.active {
+    right: 0;
+}
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    scroll-behavior: smooth;
+}
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px; 
+}
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price {
+    font-weight: 500;
+}
+.cart-quantity {
+    border: 1px solid black;  
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove {
+    background-color: red;
+}
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+    gap: 30px;
+}
+.total-title {
+   font-size: 1rem;
+   font-weight: 600;
+}
+.total-price {
+  margin-left: 00.5rem;
+}
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px;
+    border: none;
+    background-color: orangered;
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover {
+    background: var(--text-color);
+}
+#close-cart{
+   position: absolute;
+   top: 1rem;
+   right: 0.8rem;
+   font-size: 2rem;
+   color: var(--text-color);
+   cursor: pointer;
+}
+.check-out {
+    text-decoration: none;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    color: white;
+    background-color: #000;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.cart-out {
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+}
+.twocolumns{
+display: flex;
+}
+.twocolumns > .col-2{
+    padding-left: 230px;
+    padding-top: 30px;
+}
+/* .col-3{
+border: 2px solid rebeccapurple;
+ 
+} */
