@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/navbar.css">
+    <title>Beauty</title>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js"crossorigin="anonymous"></script>
+    <style>
+      
+       .footerFirstDetails>div>img{
+    height:400px;
+    width:400px;
+    /* border: 1px solid black; */
+}
+.footerFirstDetails{
+    font-family: 'Marcellus', serif;
+    display: grid;
+    width:97%;
+    margin-top:50px ;
+    margin-left:40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    border-top:1px solid rgb(120, 116, 116);
+    text-align: center;
+}
+.footerFirstDetails>div{
+    border: 1px solid black;
+    width:450px;
+    border:none;
+}
+
+#footerpic img{
+     width:460px;
+     height:350px;
+     margin-top:30px;
+}
+.pDetails>h2{
+    font-weight: 400;
+   text-align: center;
+   font-family: 'Marcellus', serif;
+}
+.pDetails{
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Marcellus', serif;
+}
+#disc{
+    margin-top: 15px;
+    text-align: center;
+    /* margin-left: 30%; */
+    width:auto;
+    padding:10px 15px 10px 15px;
+    background-color: white;
+    letter-spacing: 0.2em;
+    border:1px solid rgb(153, 148, 148);
+    font-family: 'Marcellus', serif;
+}
+.footer{
+    width:100%;
+    padding-top:60px;
+    padding-bottom: 100px;
+    background-color: #e6e6e6;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.col-1,.col-2{
+    text-align: left;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.col-1>h4{
+    margin-left: 35px;
+    width: 150px;
+}
+.footer div h3{
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.col-1 a,.col-2 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 300px;
+}
+.col-2 {
+    padding-top: 60px;
+    margin-right: 60px;
+    height:100px;
+    font-weight: 500;
+    
+}
+#form input,#buttonb {
+    width:290px;
+    height:30px;
+    text-align: center;
+    margin-bottom:24px;
+    outline: none; 
+}
+#buttonb{
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.social-icons{
+    display: flex;
+    margin-right: 160px;
+    margin-top:10px;
+}
+.social-icons i{
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#imgbg>img{
+    width:270px;
+    height:100px;
+    /* border:1px solid black; */
+    margin-top: 50px;
+}
+.col-3{
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.col-3>h4{
+
+    width:300px;
+    letter-spacing: 0.2em;
+}
+#goggldiv{
+    width: 260px;
+    height:260px;
+}
+#goggldiv img{
+     width:240px;
+     height:70px;
+     margin-top:80px;
+}
+
+.viewport{
+    background-color: white;
+    color:black;
+    margin-left: 47%;
+    border:1px solid rgb(165 159 159);
+    height: 40px;
+    width:120px;
+    letter-spacing: 4px;
+}
+
+@media all and (min-width:480px) and (max-width:760px){
+
+    .footerFirstDetails{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        margin-left: auto;
+    }
+    .bodyFirstDetails,.bodyFirstDetails1{
+        overflow: scroll;
+        margin-left: auto;
+        width:98%;
+    }
+  .viewport{
+     margin-bottom: 20px;
+  }
+  .productDetails>p{
+    display: inline-block;
+    
+}
+#footerpic img{
+    width:400px;
+    margin-left: 0px;
+   
+}
+.footer .col-3{
+    width: 200px;
+    margin-top: 150px;
+}
+.footer{
+   grid-template-columns: repeat(1,1fr);
+   grid-template-rows: auto;
+   width:100%;
+}
+.col-3{
+    margin-left: 30px;
+}
+}
+
+@media all and (min-width:120px) and (max-width:480px){
+
+    .footerFirstDetails{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: auto;
+    }
+    .bodyFirstDetails,.bodyFirstDetails1{
+        overflow: scroll;
+        margin-left: auto;
+    }
+    .productDetails>p{
+        display: inline-block;
+        
+    }
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        width:100%;
+     }
+     .col-3{
+        margin-left: 30px;
+    }
+    #footerpic img{
+        width:400px;
+        margin-left: 0px;
+       
+    }
+    .footer .col-3 h4{
+        width: 200px;
+        margin-top: 150px;
+    }
+    .pDetails h2{
+        margin: auto;
+        width: 300px;
+    }
+}
+#form{
+    width: 200px;
+}
+      
+    *{
+        
+         font-family: Tiemann, serif;
+    }
+        #bigcontainer{
+            height: auto;
+            width: 80%;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+            /* margin-top: 150px; */
+        }
+        #left{
+            height: auto;
+            width: 300px;
+            border: 0.2px solid rgb(218, 216, 216);  
+            margin-top: 40px;
+            /* border-right: 1px solid grey; */
+            padding-left: 10px;
+        }
+        #smallcontainer{
+            height: auto;
+            width: 1100px;
+            /* border: 1px solid red; */
+            margin-right: 30px;
+            padding: 10px;
+        }
+        #box{
+            height: auto;
+            width: 100%;
+            /* border: 1px solid blue; */
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #pdtbox{
+            height: auto;
+            width: 810px;
+            /* border: 1px solid black;  */
+            display: grid;
+            /* padding: 10px; */
+            grid-template-columns: repeat(3,1fr);
+            gap: 5px;
+        }
+        #pdtbox>div{
+            /* border: 1px solid black;  */
+            /* padding: 10px; */
+            text-align: center;
+            margin: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+         }
+         #scroll{
+           overflow: scroll;
+           height: 150px;
+         }
+         @media only screen and (min-width:70px) and (max-width:420px){
+            #pdtbox{
+                height: auto;
+                width: auto;
+                grid-template-columns: repeat(1,1fr);
+            }
+         }
+         @media only screen and (min-width:420px) and (max-width:780px){
+            #pdtbox{
+                height: auto;
+                width: auto;
+                grid-template-columns: repeat(2,1fr);
+            }
+         }
+    </style>
+</head>
+
+<body>
+  <div id="navbar"></div>
+        <div id="bigcontainer">
+            <div id="left">
+                <h3 style="cursor: pointer;">Category</h3>
+                <hr align="left">
+                <h5 style="color:red;">Beauty</h5>
+                        <p id="side">Products</p>
+                        
+                
+               <h3> Brand</h3>
+                <hr align="left">
+                <div id="scroll">
+                  <input type="checkbox"  onclick="funclick1()"/>BALENCIAGA <br>
+                  <input type="checkbox"  onclick="funclick2()"/> ALEXANDER MC QUEEN<br>
+                  <input type="checkbox"  onclick="funclick3()"/> BOTTEGA VENETA<br>
+                  <input type="checkbox"  onclick="funclick4()"/> DOLCE & GABBANA<br>
+                  <input type="checkbox" >GUCCI<br>
+                  <input type="checkbox"> ALLEN EDMONDS <br>
+
+                </div>
+                
+                <br>
+                <h3> Price </h3>
+                <hr align="left">
+                  <div>
+                  <input type="checkbox" value="less100" class="theClass" onclick="funprice1()"/>less than $.200 <br>
+                  <input type="checkbox"  value="100to200" class="theClass" onclick="funprice2()"/>$.200 to $.500<br>
+                  <input type="checkbox" value="upto500" class="theClass" onclick="funprice3()"/>$.500 to $1000<br>
+                  <input type="checkbox" value="less1000" class="theClass" onclick="funprice4()"/>greater than $.1000<br>
+                  </div>
+            </div>
+            <div id="smallcontainer">
+                <div id="box">
+                    <h1 style="margin: auto;">Beauty Products</h1>
+                    <select id="sortby" style="height: 30px; margin-top: 20px;">
+                      <option value="">Select Sort</option>
+                        <option value="pop">Best Selling</option>
+                        <option value="asc">Price:Low to High</option>
+                        <option value="dsc">Price:High to Low</option>
+                        <option value="alpha">A-Z</option>
+                    </select>
+                </div>
+                
+                
+                <div id="pdtbox">
+
+                </div>
+            </div>
+        </div>
+        <div class="footerFirstDetails">
+          <div id="footerf">
+              <div id="footerpic">
+                  <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/denim_900x.jpg?v=1615204984" alt="" />
+              </div>
+              <div class="pDetails">
+                  <h2>UP TO 85% OFF THE DENIM SHOP FOR HIM & HER</h2>
+              </div>
+              <div class="pDetails">From Hudson Jeans, Joe's Jeans, J Brand & More</div>
+             <button id="disc">SHOP DENIM</button>
+          </div>
+          <div id="footerf">
+              <div id="footerpic">
+                  <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1050175007_RLLZ_1_360x.jpg?v=1665223672" alt="" />
+              </div>
+              <div class="pDetails">
+                  <h2>UP TO 90% OFF TRENDING JUMPSUITS & ROMPERS</h2>
+              </div>
+              <div class="pDetails">Must-Haves From Cole Haan, Burberry, & More</div>
+             <button id="disc">SHOP OUTER WEAR</button>
+          </div>
+          <div id="footerf">
+              <div id="footerpic">
+                  <img src="https://media.tagembed.com/post/46588/57802/87415/17974270546706060.png" alt="" />
+              </div>
+              <div class="pDetails">
+                  <h2>UP TO 90% OFF WOMEN'S MUST-HAVE ACCESSORIES</h2>
+              </div>
+              <div class="pDetails">Shop Wallets, Belts, Hats, Sunglasses & More</div>
+              <button id="disc">SHOP WOMEN'S ACCESSORIES</button>
+          </div>
+      </div>
+
+       <div class="footer">
+          <div class="col-1">
+              <h4>ABOUT US</h4>
+              <a href="#">Contact Us</a>
+              <br>
+              <a href="#">Frequently Asked Questions</a>
+              <br>
+              <a href="#">Shipping& Returns</a>
+              <br>
+              <a href="#">Pre-Owned Guide</a>
+          </div>
+          <div class="col-2">
+              <a href="#">Sell on Bluefly</a>
+              <br>
+              <a href="#">Privacy Policy</a>
+              <br>
+              <a href="#">Terms& Conditions</a>
+          </div>
+          <div class="col-3">
+              <h4>SIGN UP AND SAVE</h4>
+              <div id="form">
+                  <p>Subscribe to get exclusive offers on designer brands</p>
+                  <input type="text"placeholder="Enter email address" required>
+                  <br>
+                  <button type="submit"onclick=subfun() id="buttonb">Subscribe</button>
+              </div>
+              <div class="social-icons">
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-facebook"></i>
+              </div>
+              <div id="imgbg">
+                  <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt="">
+              </div>
+          </div>
+      </div>
+</body>
+
+</html>
+<script>
+    var data=[
+       {
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111370850_RLLZ_2_large.jpg?v=1665478924",
+         proName:"BALENCIAGA",
+         detail:"30ML TINT & PROTECT SKIN PERFECTING SPF 30 TINTED MOISTURIZER",
+         price:85.99,
+         strike:"$149.00",
+         offer:"Save 42%",
+         qty:1,
+       },
+       {
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111888749_RLLZ_1_large.jpg?v=1665555566",
+         proName:"BALENCIAGA",
+         detail:"UNISEX 7.6OZ MOJAVE GHOST BODY WASH",
+         price:42.99,
+         strike:"$50.00",
+         offer:"Save 14%",
+         qty:1,
+       },
+       {
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111887666_RLLZ_1_large.jpg?v=1665240322",
+         proName:"BALENCIAGA",
+         detail:"SKINCARE TRIAL REGIMEN - INJECTION PERFECTION",
+         price:116.99,
+         strike:"$175.00",
+         offer:"Save 33%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111887665_RLLZ_1_large.jpg?v=1664882804",
+         proName:"BALENCIAGA",
+         detail:"SKINCARE 3PCOZ TRIAL REGIMEN -THE REVISION STARTER",
+         price:149.99,
+         strike:"$175.00",
+         offer:"Save 14%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111200945_RLLZ_1_large.jpg?v=1665523459",
+         proName:"BALENCIAGA",
+         detail:"STURM 1.7OZ FACE CREAM",
+         price:172.99,
+         strike:"$215.00",
+         offer:"Save 20%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111871360_RLLZ_1_large.jpg?v=1665556063",
+         proName:"ALEXANDER MC QUEEN",
+         detail:"6PK SILK SKINNY SLIPS",
+         price:29.99,
+         strike:"$39.00",
+         offer:"Save 23%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111836724_RLLZ_1_6e956dbb-7511-4163-9dfb-0037c7685d11_large.jpg?v=1663720347",
+         proName:"ALEXANDER MC QUEEN",
+         detail:"TRAVEL HAIRBRUSH",
+         price:69.99,
+         strike:"$85.00",
+         offer:"Save 18%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111610439_RLLZ_2_large.jpg?v=1665256656",
+         proName:"ALEXANDER MC QUEEN",
+         detail:"LIGHT THERAPY GOLDEN FACIAL TREATMENT DEVICE (LED)",
+         price:381.99 ,
+         strike:"$625.00",
+         offer:"Save 39%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111593244_RLLZ_2_large.jpg?v=1663720608",
+        proName:"ALEXANDER MC QUEEN",
+         detail:"TONE & LIFT GERMANIUM CONTOURING FACIAL ROLLER",
+         price:72.99,
+         strike:"$97.00",
+         offer:"Save 25%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111322440_RLLZ_1_large.jpg?v=1665488878",
+        proName:"ALEXANDER MC QUEEN",
+         detail:"KIM TAIYANA HEADBAND",
+         price:40.99,
+         strike:"$145.00",
+         offer:"Save 72%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111349759_RLLZ_1_large.jpg?v=1664338409",
+         proName:"BOTTEGA VENETA",
+         detail:"CORA HEADBAND",
+         price:79.99,
+         strike:"$155.00",
+         offer:"Save 48%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111550333_RLLZ_2_large.jpg?v=1665260480",
+         proName:"BOTTEGA VENETA",
+         detail:" MEDUSA PLAQUE HAIR PIN",
+         price:260.99,
+         strike:"$375.00",
+         offer:"Save 30%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111320004_RLLZ_1_46e44e29-1320-4b2a-8c38-ebaf739810bc_large.jpg?v=1664554826",
+         proName:"BOTTEGA VENETA",
+         detail:"DR. BRANDT SKINCARE TAKE YOUR BEST SELFIE 5PC KIT",
+         price:17.99,
+         strike:"$72.00",
+         offer:"Save 75%",
+         qty:1,
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111026433_RLLZ_2_large.jpg?v=1663722713",
+         proName:"BOTTEGA VENETA",
+         detail:"0.08OZ INSTANT BRIGHT EYE MASK",
+         price:85.99,
+         strike:"$102.00",
+         offer:"Save 16%",
+         qty:1,
+        },
+        {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111104469_RLLZ_2_large.jpg?v=1664950709",
+         proName:"BOTTEGA VENETA",
+         detail:"2PC MASK & GLOW COLLECTION",
+         price:27.99,
+         strike:"$48.00",
+         offer:"Save 42%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111104467_RLLZ_2_large.jpg?v=1665027604",
+         proName:"DOLCE & GABBANA",
+         detail:"4PC MISA SET",
+         price:325.99,
+         strike:"$533.00",
+         offer:"Save 39%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111119445_RLLZ_1_670485df-ed1f-4980-b342-a268b6583078_large.jpg?v=1663173563",
+         proName:"DOLCE & GABBANA",
+         detail:"1.7OZ BAUME NOIR FACE",
+         price:179.99,
+         strike:"$295.00",
+         offer:"Save 39%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111247615_RLLZ_1_large.jpg?v=1657253354",
+         proName:"DOLCE & GABBANA",
+         detail:"BY TERRY 1.5G #1 MIMETIC BEIGE ROUGE-EXPERT CLICK STICK",
+         price:19.99,
+         strike:"$32.00",
+         offer:"Save 38%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111605531_RLLZ_1_large.jpg?v=1665478686",
+         proName:"DOLCE & GABBANA",
+         detail:"AHAVA THE APPLE OF MY EYE 3PC KIT",
+         price:134.99,
+         strike:"$199.00",
+         offer:"Save 32%",
+         qty:1,
+       },
+       {
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111083009_RLLZ_1_large.jpg?v=1665325940",
+         proName:"DOLCE & GABBANA",
+         detail:"MALIN+GOETZ 4OZ VITAMIN E FACE MOISTURIZER",
+         price:34.99,
+         strike:"$50.00",
+         offer:"Save 30%",
+         qty:1,
+       },
+       ];
+
+       var datafromlocal=JSON.parse(localStorage.getItem("Beauty"))||[];
+       displayData(data);
+       function displayData(data){
+      document.querySelector("#pdtbox").innerHTML="";
+      data.map(function(ele){
+          var div=document.createElement("div");
+
+          var div2=document.createElement("div");
+        
+
+           var image=document.createElement("img");
+           image.src=ele.image_url;
+           image.style.width="100%"
+           image.style.height="220px"
+           image.style.cursor="pointer";
+           image.addEventListener("click",function(){
+            myimgfun(ele);
+           });
+
+           var div3=document.createElement("div");
+           var pro=document.createElement("p");
+           pro.innerText=ele.proName;
+           pro.style.fontSize="12px";
+           pro.style.color="grey"
+           var name=document.createElement("p");
+           name.innerText=ele.detail;
+           name.style.margin="-12px auto -2px auto"
+           div3.append(pro,name)
+
+
+           var div4=document.createElement("div");
+           var price=document.createElement("p");
+           price.innerText=`$.${ele.price}`;
+           var strike=document.createElement("p");
+           strike.innerText=ele.strike;
+           strike.style.textDecoration="line-through"
+           var saving=document.createElement("p");
+           saving.innerText=ele.offer;
+           saving.style.color="red"
+           div4.append(price,strike,saving);
+           div4.style.display="flex";
+           div4.style.justifyContent="space-evenly";
+           
+
+           div.append(div2,image,div3,div4,); 
+
+           document.querySelector("#pdtbox").append(div);
+           localStorage.setItem("sunglasses",JSON.stringify(data));
+           
+       })
+
+       }
+
+       function myimgfun(ele){
+         console.log(ele);
+         localStorage.setItem("product",JSON.stringify(ele));
+         window.location.href="products.html";
+       }
+       //Sort Logic
+       document.querySelector("#sortby").addEventListener("change",sortByPrice);
+       function sortByPrice(){
+        var sortData=document.querySelector("#sortby").value;
+
+          if(sortData=="dsc"){
+          data.sort(function(a,b){
+            if(a.price>b.price) return -1;
+            if(a.price<b.price) return 1;
+            return 0;
+          })
+       console.log(data)
+       displayData(data);
+          }
+
+       if(sortData=="asc"){
+          data.sort(function(a,b){
+            if(a.price>b.price) return 1;
+            if(a.price<b.price) return -1;
+            return 0;
+          })
+       console.log(data)
+       displayData(data)
+      }
+
+        if(sortData=="alpha"){
+      data.sort(function (a, b) {
+      if (a.detail > b.detail) return 1;
+      if (a.detail < b.detail) return -1;
+      return 0;
+    });
+
+    console.log(data);
+    displayData(data)
+        }
+        if(sortData=="pop"){
+      data.sort(function (a, b) {
+      if (a.strike > b.strike) return -1;
+      if (a.strike < b.strike) return 1;
+      return 0;
+    });
+
+    console.log(data);
+    displayData(data)
+        }
+    }
+    //end of Sort Logic
+     //checkBox Brand Logic
+     var a=b=c=d=0; var count1=0;
+    function funclick1(){
+        if(count1==0){
+            a=1;
+            count1++;  
+        }else{
+            a=0;
+            count1--;
+        }
+       
+        abc1();
+    }
+    var count2=0;
+    function funclick2(){
+        if(count2==0){
+            b=1;
+            count2++;  
+        }else{
+            b=0;
+            count2--;
+        }
+        abc2();
+    }
+    var count3=0;
+    function funclick3(){
+        if(count3==0){
+            c=1;
+            count3++;  
+        }else{
+            c=0;
+            count3--;
+        }
+        abc3(); 
+    }
+    var count4=0;
+    function funclick4(){
+        if(count4==0){
+            d=1;
+            count4++;  
+        }else{
+            d=0;
+            count4--;
+        }
+        abc4();
+    }
+    var checkBoxArr=[];
+     
+    function abc1(){
+      if(a==1){
+        var w=[]
+        data.map(function(ele){
+          if(ele.proName=="BALENCIAGA"){
+            
+            w.push(ele);
+            displayData(w);
+          }
+        })
+      }else{
+        displayData(data);
+      }
+    }
+   function abc2(){
+      if(b==1){
+        var x=[]
+         data.map(function(ele){
+           if(ele.proName=="ALEXANDER MC QUEEN"){
+             x.push(ele);
+             displayData(x);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+      }
+  function abc3(){
+       if(c==1){
+        var y=[];
+         data.map(function(ele){
+           if(ele.proName=="BOTTEGA VENETA"){
+             y.push(ele);
+             displayData(y);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+      }
+       function abc4(){
+       if(d==1){
+         var z=[];
+         data.map(function(ele){
+           if(ele.proName=="DOLCE & GABBANA"){
+             z.push(ele);
+             displayData(z);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+    }
+//End of CheckBox Brand
+//checkBox Price
+var a=b=c=d=0; var count1=0;
+    function funprice1(){
+        if(count1==0){
+            a=1;
+            count1++;  
+        }else{
+            a=0;
+            count1--;
+        }
+       
+        price1();
+    }
+    var count2=0;
+    function funprice2(){
+        if(count2==0){
+            b=1;
+            count2++;  
+        }else{
+            b=0;
+            count2--;
+        }
+        price2();
+    }
+    var count3=0;
+    function funprice3(){
+        if(count3==0){
+            c=1;
+            count3++;  
+        }else{
+            c=0;
+            count3--;
+        }
+        price3(); 
+    }
+    var count4=0;
+    function funprice4(){
+        if(count4==0){
+            d=1;
+            count4++;  
+        }else{
+            d=0;
+            count4--;
+        }
+        price4();
+    }
+
+    function price1(){
+      if(a==1){
+        var w=[]
+        data.map(function(ele){
+          if(ele.price < 200){
+            
+            w.push(ele);
+            displayData(w);
+          }
+        })
+      }else{
+        displayData(data);
+      }
+    }
+   function price2(){
+      if(b==1){
+        var x=[]
+         data.map(function(ele){
+           if(ele.price > 200 &&  ele.price < 500){
+             x.push(ele);
+             displayData(x);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+      }
+  function price3(){
+       if(c==1){
+        var y=[];
+         data.map(function(ele){
+           if(ele.price>500 && ele.price<1000){
+             y.push(ele);
+             displayData(y);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+      }
+       function price4(){
+       if(d==1){
+         var z=[];
+         data.map(function(ele){
+           if(ele.price>1000){
+             z.push(ele);
+             displayData(z);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+    } 
+    //end of CheckBox Price 
+     
+</script>
+<script type="module" >
+  import {navbar} from "./components/navbar.js"
+  let nav=document.getElementById("navbar").innerHTML=navbar();
+</script>
+<script>
+  function subfun(){
+    document.getElementById("buttonb").innerHTML=null
+    document.getElementById("form").innerText="Thank You For Suscribe !!!"
+}
+</script>
