@@ -7,20 +7,43 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        /* position: relative; */
+    }
     #navbar{
         display: flex;
         justify-content: space-around;
         background-color: blue;
+        z-index: 1;
+        position: sticky;
+        top: 0;
+        
+        width: 100%;
+        
     }
     #content{
         display: flex;
         justify-content: space-around;
+        height: 200vh;
+        margin-top: 2rem;
+    }
+    #content>div{
+        position: relative;
     }
     #cart{
         cursor: pointer;
     }
     button{
         cursor: pointer;
+    }
+    .sideCart{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 360px;
+        min-height: 100vh;
+        padding: 20px;
+        
     }
 </style>
 <body>
@@ -29,6 +52,9 @@
         <p>Women</p>
         <p>Account</p>
         <p id="cart">Cart</p>
+    </div>
+    <div class="sideCart">
+        <h2 id="cart-title">Cart</h2>
     </div>
     <div id="content">
 
@@ -81,7 +107,7 @@ var data=[
        },
        {
          id:5,
-         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111458056_RLLZ_1_ac77c477-aee9-41d2-9ca7-a809b2f42217_large.jpg?v=1651568682",
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1682884658-1-aqud14sa-1500-2000_m_180x.jpg?v=1609175497",
          proName:"BALENCIAGA",
          detail:"BALENCIAGA SKINCARE MAGNETIGHT MASK",
          price:8.99,
