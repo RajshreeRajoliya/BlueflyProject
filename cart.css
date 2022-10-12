@@ -9,6 +9,9 @@ body{
     line-height: 1.6;
     letter-spacing: .025em;
 }
+#page-content{
+    padding: 1.5rem 1.7rem;
+}
 #heading{
     text-align: center;
 }
@@ -36,11 +39,20 @@ h1{
     transition: width 0.5s ease;
     transform-origin: 0 100% ;
 }
+#wrap-row-head{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #e8e8e1;
+    --border-color: #e8e8e1;
+    margin-bottom: 1.8rem;
+    padding-bottom: 0.8rem;
+}
 #row-constant{
     display: flex;
     justify-content: flex-end;
     width: 40%;
-    float: right;
+    
+    
 }
 #row-constant > p{
     width: 33.3333%;
@@ -56,12 +68,13 @@ h1{
 }
 .product-detail{
     display: flex;
-    border: 0.5px solid lightgray;
+    /* border: 0.5px solid lightgray; */
     align-items: center;
     /* display: table; */
     /* table-layout: fixed; */
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 1.8rem;
 }
 .image-and-details{
     /* display: flex;
@@ -74,6 +87,12 @@ h1{
 .image-and-details>*{
     padding-left: 22px;
     text-transform: uppercase;
+}
+.image{
+    width: 25%;
+}
+.details-clr-size{
+    width: 75%;
 }
 .prod-title{
     text-transform: uppercase;
@@ -121,6 +140,7 @@ h1{
     display: table-cell;
     vertical-align: middle;
     float: none;
+    font-size: 1rem;
 }
 .price{
     text-align: right;
@@ -148,11 +168,14 @@ input{
     float: none;
 }
 img{
-    height: 150px;
+    /* height: 150px; */
+    width: 100%;
 }
 #cart-total{
     position: relative;
     text-align: right;
+    padding-top: 1rem;
+    border-top: 1px solid #e8e8e1;
 }
 .subTotal{
     display: flex;
@@ -161,6 +184,7 @@ img{
     width: 50%;
     position: relative;
     left: 50%;
+    margin-bottom: 0.9rem;
 }
 .subTotal > div{
     display: table-cell;
@@ -182,12 +206,17 @@ a{
 #update-btn, #checkout-btn{
     text-align: center;
     padding: 0.7rem 1.3rem;
-    font: 13px;
+    font-size: 13px;
     line-height: 1.4;
     font-weight: 700;
     letter-spacing: 0.2em;
     min-width: 80px;
     border: 1px solid #e8e7e5;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+#btns{
+    margin-bottom: 1.6rem;
 }
 #update-btn{
     background-color: transparent;
@@ -197,4 +226,5 @@ a{
     position: relative;
     background-color: black;
     color: #fff;
+    margin-left: 0.9em;
 }

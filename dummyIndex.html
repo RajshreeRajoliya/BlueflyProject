@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        background-color: blue;
+    }
+    #content{
+        display: flex;
+        justify-content: space-around;
+    }
+    #cart{
+        cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div id="navbar">
+        <p>Men</p>
+        <p>Women</p>
+        <p>Account</p>
+        <p id="cart">Cart</p>
+    </div>
+    <div id="content">
+
+    </div>
+</body>
+</html>
+
+<script>
+
+var data=[
+       {
+         id:1,
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1881083_large.jpg?v=1637943584",
+         proName:"BALENCIAGA",
+         detail:"BALENCIAGA SHORT SLEEVE T-SHIRT",
+         price:40.05,
+         strike:"$48",
+         offer:"Save 15%",
+         qty:1,
+       },
+       {
+         id:2,
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/270324.B_large.jpg?v=1651609312",
+         proName:"BALENCIAGA",
+         detail:"BALENCIAGA SILVER CRYSTAL CLUSTER T-STRAP SANDAL ",
+         price:38.99,
+         strike:"$127",
+         offer:"Save 70%",
+         qty:1,
+       },
+       {
+         id:3,
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/6030885907_RLLZ_2_large.jpg?v=1651135360",
+         proName:"BALENCIAGA",
+         detail:"BALENCIAGA SILVER CZ HEART SWIRLS RING",
+         price:25.99,
+         strike:"$65",
+         offer:"Save 67%",
+         qty:1,
+       },
+       {
+         id:4,
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/75210-75212_b_ORG_zpsfd4prp8u_large.jpg?v=1650449297",
+         proName:"BALENCIAGA",
+         detail:"BALENCIAGA BLACK LEATHER BELT",
+         price:19.99,
+         strike:"$195",
+         offer:"Save 90%",
+         qty:1,
+       },
+       {
+         id:5,
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1111458056_RLLZ_1_ac77c477-aee9-41d2-9ca7-a809b2f42217_large.jpg?v=1651568682",
+         proName:"BALENCIAGA",
+         detail:"BALENCIAGA SKINCARE MAGNETIGHT MASK",
+         price:8.99,
+         strike:"$24",
+         offer:"Save 63%",
+         qty:1,
+       },
+       {
+         id:6,
+         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/JtIC3RUtPVyUqrVAlapAjg0dbsr772ci-25_large.jpg?v=1651569848",
+         proName:"ALEXANDER MC QUEEN",
+         detail:"ALEXANDER MC QUEEN BLUES FULL ZIP STRIPED JACKET",
+         price:44.02,
+         strike:"$149",
+         offer:"Save 70%",
+         qty:1,
+       },
+    ]
+    displayPage();
+    // var prodList;
+//
+document.getElementById("cart").addEventListener("click", showcart);
+
+
+function showcart(){
+    console.log("showcart");
+}
+
+function addToCart(e){
+    console.log(e);
+}
+function displayPage(){
+data.map((e)=>{
+    var div = document.createElement("div");
+    var img = document.createElement("img");
+    var title = document.createElement("p");
+    var price = document.createElement("p");
+    var button = document.createElement("button");
+
+    img.setAttribute("src", e.image_url);
+    img.setAttribute("height", "150px");
+
+    title.innerText = e.proName;
+    price.innerHTML = e.price;
+    button.innerText = "Add to Cart";
+    button.setAttribute("class", "add-to-cart-btn");
+
+    button.addEventListener("click", function(){
+        addToCart(e);
+    });
+    div.append(img, title, price, button);
+    document.querySelector("#content").append(div);
+})
+}
+
+</script>
