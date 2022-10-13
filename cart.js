@@ -42,7 +42,7 @@ function display(data){
     var divCartProd = document.createElement("div");
     divCartProd.classList.add("cart_products");
 
-    data.map((e)=>{
+    data.map((e, i)=>{
 
 
         var divProductDetail = document.createElement("div");
@@ -86,6 +86,9 @@ function display(data){
         var remove = document.createElement("p");
         remove.innerText = "REMOVE";
         divRemBtn.append(remove);
+        divRemBtn.onclick = function(){
+            removeItem(e, i);
+        };
         divDetailsClrSize.append(prodTitle, divColorSize, divRemBtn);
 
         divImgAndDetails.append(divImage, divDetailsClrSize);
@@ -108,13 +111,20 @@ function display(data){
         var input = document.createElement("input");
         input.setAttribute("type", "number");
         input.setAttribute("min", "0");
-        input.setAttribute("value", "0");
+        input.setAttribute("value", e.qty);
+
+        input.onchange = function(){
+            qtyChanged(e, i);
+        };
+        // input.innerText = e.qty;
         qty.append(input);
         //need to take this after update cart button;
 
         var total = document.createElement("div");
         total.classList.add("total");
-        total.innerText = "200"; //total logic = qty * price
+        var totalThis = e.qty * e.price;
+        totalThis = Math.round(totalThis * 100)/100;
+        total.innerText = totalThis; //total logic = qty * price
 
         wrapPQT.append(price, qty, total);
         divPriceQtyTotal.append(wrapPQT);
@@ -135,6 +145,7 @@ function display(data){
     var divSubText = document.createElement("div");
     divSubText.innerText = "SUBTOTAL";
     var divTotal = document.createElement("div");
+    divTotal.setAttribute("id", "sumtotal");
     divTotal.innerText = ""
     //logic for total is sum of all the product;
 
@@ -152,6 +163,9 @@ function display(data){
     aCart.setAttribute("href", "#");
     aCart.innerText = "UPDATE CART";
     updateBtn.append(aCart);
+    updateBtn.onclick = function(){
+        updateSubtotal();
+    }
 
     var checkoutBtn = document.createElement("button");
     checkoutBtn.setAttribute("id", "checkout-btn");
@@ -168,4 +182,48 @@ function display(data){
 
     document.querySelector("#page-content").append(container);
 
+    
+}
+
+function qtyChanged(e, i){
+    e.qty = event.target.value
+    // console.log(e.qty);
+    // console.log(prodList[i]);
+    var prod = document.getElementsByClassName("product-detail")[i];
+    if(e.qty == 0){
+        removeItem(e, i);
+        // console.log(prod);
+        // prod.remove();
+    }
+    updateThisTotal(e, i);
+
+}
+
+function updateThisTotal(e, i){
+    console.log(e.qty, e.price);
+    var totalThis = e.qty * e.price;
+    totalThis = Math.round(totalThis * 100)/100;
+    console.log(totalThis);
+    var targetTotal = document.getElementsByClassName("total")[i];
+    targetTotal.innerText = totalThis;
+    console.log(targetTotal.innerText);
+}
+
+function removeItem(e, i){
+    var prod = document.getElementsByClassName("product-detail")[i];
+    prod.remove();
+    console.log(e, i);
+}
+
+function updateSubtotal(){
+    var subtotal = document.getElementById("sumtotal");
+    var qty = document.querySelectorAll("input");
+    var totalSingle = document.querySelectorAll(".total");
+    var sum = 0;
+    for(var i=0; i<qty.length; i++){
+        sum += qty[i].value * +totalSingle[i].innerText;
+        console.log(totalSingle[i].innerText);
+    }
+    subtotal.innertext = ("$", sum);
+    console.log(subtotal.innerText);
 }
