@@ -1,12 +1,45 @@
 //need to check the keyname for prod array and cart products
 
 var prodList = JSON.parse(localStorage.getItem("prodList")) || [];
+var sum = localStorage.getItem("sum") || 0;
+console.log(sum);
 
-display(prodList);
+var container = document.createElement("div");
+container.setAttribute("id", "container");
 
-function display(data){
-    var container = document.createElement("div");
-    container.setAttribute("id", "container");
+display();
+
+function display(){
+    if(prodList.length>0){
+        displayCart(prodList);
+    }
+    else{
+        displayEmpty();
+    }
+}
+function displayEmpty(){
+    container.innerHTML = "";
+
+    var head = document.createElement("div");
+    head.setAttribute("id", "heading");
+    var h1 = document.createElement("h1");
+    h1.innerText = "CART";
+    var divP = document.createElement("div");
+    var empty = document.createElement("p");
+    empty.innerText = "Your cart is currently empty."
+    var btnContinue = document.createElement("p");
+    btnContinue.setAttribute("id", "btn-continue-shopping");
+    btnContinue.innerText = "Continue Shopping";
+    btnContinue.onclick = continueShopping;
+    divP.append(btnContinue);
+    head.append(h1,empty, divP);
+    container.append(head)
+    document.querySelector("#page-content").append(container);
+}
+
+function displayCart(data){
+    
+    container.innerHTML = "";
 
     var head = document.createElement("div");
     head.setAttribute("id", "heading");
@@ -16,6 +49,7 @@ function display(data){
     var btnContinue = document.createElement("p");
     btnContinue.setAttribute("id", "btn-continue-shopping");
     btnContinue.innerText = "Continue Shopping";
+    btnContinue.onclick = continueShopping;
     divP.append(btnContinue);
     head.append(h1, divP);
 
@@ -124,7 +158,7 @@ function display(data){
         total.classList.add("total");
         var totalThis = e.qty * e.price;
         totalThis = Math.round(totalThis * 100)/100;
-        total.innerText = totalThis; //total logic = qty * price
+        total.innerText = `$${totalThis}`; //total logic = qty * price
 
         wrapPQT.append(price, qty, total);
         divPriceQtyTotal.append(wrapPQT);
@@ -146,7 +180,12 @@ function display(data){
     divSubText.innerText = "SUBTOTAL";
     var divTotal = document.createElement("div");
     divTotal.setAttribute("id", "sumtotal");
-    divTotal.innerText = ""
+    var total = 0;
+    for(var i=0; i<data.length; i++){
+        total += data[i].qty * data[i].price;
+    }
+    total = Math.round(total * 100)/100;
+    divTotal.innerText = `$${total}`;
     //logic for total is sum of all the product;
 
     divsubtotal.append(divSubText, divTotal);
@@ -160,11 +199,13 @@ function display(data){
     var updateBtn = document.createElement("button");
     updateBtn.setAttribute("id", "update-btn");
     var aCart = document.createElement("a");
-    aCart.setAttribute("href", "#");
+    aCart.setAttribute("href", "cart.html");
     aCart.innerText = "UPDATE CART";
     updateBtn.append(aCart);
     updateBtn.onclick = function(){
-        updateSubtotal();
+        updateSubtotal(data);
+
+
     }
 
     var checkoutBtn = document.createElement("button");
@@ -173,7 +214,7 @@ function display(data){
     aChkout.setAttribute("href", "information.html");
     aChkout.innerText = "CHECK OUT";
     checkoutBtn.append(aChkout);
-
+    checkoutBtn.onclick = gotoCheckout;
     divBtns.append(updateBtn, checkoutBtn);
 
     divCartTotal.append(divsubtotal, smalltext, divBtns);
@@ -186,7 +227,8 @@ function display(data){
 }
 
 function qtyChanged(e, i){
-    e.qty = event.target.value
+    e.qty = event.target.value;
+    localStorage.setItem("prodList", JSON.stringify(prodList));
     // console.log(e.qty);
     // console.log(prodList[i]);
     var prod = document.getElementsByClassName("product-detail")[i];
@@ -195,35 +237,61 @@ function qtyChanged(e, i){
         // console.log(prod);
         // prod.remove();
     }
+    
     updateThisTotal(e, i);
 
 }
 
 function updateThisTotal(e, i){
-    console.log(e.qty, e.price);
-    var totalThis = e.qty * e.price;
-    totalThis = Math.round(totalThis * 100)/100;
-    console.log(totalThis);
-    var targetTotal = document.getElementsByClassName("total")[i];
-    targetTotal.innerText = totalThis;
-    console.log(targetTotal.innerText);
+    if(e.qty>0){
+        console.log(e.qty, e.price);
+        var totalThis = e.qty * e.price;
+        totalThis = Math.round(totalThis * 100)/100;
+        console.log(totalThis);
+        var targetTotal = document.getElementsByClassName("total")[i];
+        targetTotal.innerText =  `$${totalThis}`;
+        console.log(targetTotal.innerText);
+        display();
+    }
 }
 
 function removeItem(e, i){
     var prod = document.getElementsByClassName("product-detail")[i];
     prod.remove();
     console.log(e, i);
+    prodList.splice(i, 1);
+    localStorage.setItem("prodList", JSON.stringify(prodList));
+    updateSubtotal(prodList);
 }
 
-function updateSubtotal(){
-    var subtotal = document.getElementById("sumtotal");
-    var qty = document.querySelectorAll("input");
-    var totalSingle = document.querySelectorAll(".total");
-    var sum = 0;
-    for(var i=0; i<qty.length; i++){
-        sum += qty[i].value * +totalSingle[i].innerText;
-        console.log(totalSingle[i].innerText);
+function updateSubtotal(data){
+    event.preventDefault();
+    console.log(data);
+    var total = 0;
+    for(var i=0; i<data.length; i++){
+        total += data[i].qty * data[i].price;
     }
-    subtotal.innertext = ("$", sum);
-    console.log(subtotal.innerText);
+    total = Math.round(total * 100)/100;
+    console.log(total);
+    // var subtotal = document.getElementById("sumtotal");
+    // var qty = document.querySelectorAll("input");
+    // var totalSingle = document.querySelectorAll(".total");
+    
+    // for(var i=0; i<qty.length; i++){
+    //     sum =sum +  parseInt(totalSingle[i].innerText);
+    //     // console.log(totalSingle[i].innerText);
+
+    // }
+    // sum = Math.round(sum * 100)/100;
+    localStorage.setItem("sum", total);
+    // subtotal.innertext = ("$", sum);
+    // console.log(sum);
+    display();
+}
+function continueShopping(){
+    location.href = "index.html"
+}
+
+function gotoCheckout(){
+    location.href = "information.html"
 }
