@@ -1,7 +1,5 @@
 //need to check the keyname for prod array and cart products
 
-const { Http2ServerRequest } = require("http2");
-
 var prodList = JSON.parse(localStorage.getItem("prodList")) || [];
 
 display(prodList);
@@ -23,7 +21,9 @@ function display(data){
 
     var divRowHead = document.createElement("div");
     divRowHead.setAttribute("id", "wrap-row-head");
-    divRowHead.classList.add("two-fifth");
+    var rowConstant = document.createElement("div");
+    rowConstant.setAttribute("id", "row-constant");
+    rowConstant.classList.add("two-fifth");
 
     var hPrice = document.createElement("p");
     hPrice.innerText = "Price";
@@ -33,15 +33,17 @@ function display(data){
     
     var hTotal = document.createElement("p");
     hTotal.innerText = "Total";
-
-    divRowHead.append(hPrice, hQty, hTotal);
+    
+    rowConstant.append(hPrice, hQty, hTotal);
+    divRowHead.append(rowConstant);
 
     container.append(head, divRowHead);
 
+    var divCartProd = document.createElement("div");
+    divCartProd.classList.add("cart_products");
+
     data.map((e)=>{
 
-        var divCartProd = document.createElement("div");
-        divCartProd.classList.add("cart_products");
 
         var divProductDetail = document.createElement("div");
         divProductDetail.classList.add("product-detail");
@@ -94,18 +96,21 @@ function display(data){
         var wrapPQT = document.createElement("div");
         wrapPQT.classList.add("wraps-price-qty-total");
 
+
         var price = document.createElement("div");
         price.classList.add("price");
         price.innerText = `$${e.price}`;
         
         var qty = document.createElement("div");
         qty.classList.add("qty");
-        qty.innerText = "1";
-        //need to take this after update cart button;
+        
 
         var input = document.createElement("input");
         input.setAttribute("type", "number");
         input.setAttribute("min", "0");
+        input.setAttribute("value", "0");
+        qty.append(input);
+        //need to take this after update cart button;
 
         var total = document.createElement("div");
         total.classList.add("total");
@@ -117,44 +122,50 @@ function display(data){
         divProductDetail.append(divImgAndDetails, divPriceQtyTotal);
         divCartProd.append(divProductDetail);
 
-        var divCartTotal = document.createElement("div");
-        divCartTotal.setAttribute("id", "cart-total");
-
-        var divsubtotal = document.createElement("div");
-        divsubtotal.classList.add("subTotal");
-        var divSubText = document.createElement("div");
-        divSubText.innerText = "SUBTOTAL";
-        var divTotal = document.createElement("div");
-        divTotal.innerText = ""
-        //logic for total is sum of all the product;
-
-        divsubtotal.append(divSubText, divTotal);
-
-        var smalltext = document.createElement("p");
-        smalltext.setAttribute("id", "small-text");
-        smalltext.innerText = "Shipping, taxes, and discounts codes calculated at checkout.";
-
-        var divBtns = document.createElement("div");
-        divBtns.setAttribute("id", "btns");
-        var updateBtn = document.createElement("button");
-        updateBtn.setAttribute("id", "update-btn");
-        var aCart = document.createElement("a");
-        aCart.setAttribute("href", "#");
-        aCart.innerText = "UPDATE CART";
-        updateBtn.append(aCart);
-
-        var checkoutBtn = document.createElement("button");
-        checkoutBtn.setAttribute("id", "checkout-btn");
-        var aChkout = document.createElement("a");
-        aChkout.setAttribute("href", "information.html");
-        aChkout.innerText = "CHECK OUT";
-        checkoutBtn.append(aChkout);
-
-        divBtns.append(updateBtn, checkoutBtn);
-
-        divCartTotal.append(divsubtotal, smalltext, divBtns);
-
-
 
     })
+
+    container.append(divCartProd);
+
+    var divCartTotal = document.createElement("div");
+    divCartTotal.setAttribute("id", "cart-total");
+
+    var divsubtotal = document.createElement("div");
+    divsubtotal.classList.add("subTotal");
+    var divSubText = document.createElement("div");
+    divSubText.innerText = "SUBTOTAL";
+    var divTotal = document.createElement("div");
+    divTotal.innerText = ""
+    //logic for total is sum of all the product;
+
+    divsubtotal.append(divSubText, divTotal);
+
+    var smalltext = document.createElement("p");
+    smalltext.setAttribute("id", "small-text");
+    smalltext.innerText = "Shipping, taxes, and discounts codes calculated at checkout.";
+
+    var divBtns = document.createElement("div");
+    divBtns.setAttribute("id", "btns");
+    var updateBtn = document.createElement("button");
+    updateBtn.setAttribute("id", "update-btn");
+    var aCart = document.createElement("a");
+    aCart.setAttribute("href", "#");
+    aCart.innerText = "UPDATE CART";
+    updateBtn.append(aCart);
+
+    var checkoutBtn = document.createElement("button");
+    checkoutBtn.setAttribute("id", "checkout-btn");
+    var aChkout = document.createElement("a");
+    aChkout.setAttribute("href", "information.html");
+    aChkout.innerText = "CHECK OUT";
+    checkoutBtn.append(aChkout);
+
+    divBtns.append(updateBtn, checkoutBtn);
+
+    divCartTotal.append(divsubtotal, smalltext, divBtns);
+    
+    container.append(divCartTotal);
+
+    document.querySelector("#page-content").append(container);
+
 }
