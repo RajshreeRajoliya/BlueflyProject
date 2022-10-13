@@ -228,3 +228,21 @@ a{
     color: #fff;
     margin-left: 0.9em;
 }
+#checkout-btn:hover{
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.25), transparent);
+    
+}
+
+
+/* 
+checkout button transition animation resources
+
+https://blog.bitsrc.io/pure-css-to-make-a-button-shine-and-gently-change-colors-over-time-5b685d9c6a7e
+
+transform: skewX(-20deg);
+
+background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.25), transparent);
+
+animation: shine 0.75s cubic-bezier(0.01, 0.56, 1, 1);
+
+*/
