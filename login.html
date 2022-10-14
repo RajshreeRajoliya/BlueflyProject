@@ -44,7 +44,6 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 15px;
-        /* border: 1px solid red; */
       }
       @media only screen and (max-width: 600px) {
         #loginform {
@@ -59,48 +58,48 @@
   </style>
 </head>
 <body>
-  <form action="" id="loginform">
+  <form id="loginform" onsubmit="login(event)">
     <h1>LOGIN</h1>
-    <label for="UsearEmail">Email</label> <br/>
-    <input  class="input" id="UsearEmail" type="email"> <br/>
+    <label for="UsearEmail">Email</label><br />
+    <input class="input" id="UsearEmail" type="email" /><br />
     <div class="password">
-      <label for="UserPassword">Password</label> 
-      <label for="UserPassword">Forget Password</label> 
-      </div>
-    <input  class="input" id="UsearPassword" type="password"> <br/>
-    <button class="submit"> SIGN IN</button>
-    </form>
-    <button class="submit" id="submit">CREATE ACCOUNT</button>
+      <label for="UserPassword">Password</label>
+      <label for="UserPassword">Forget Password?</label>
+    </div>
+    <input class="input" id="UserPassword" type="password" /><br />
+    <button class="submit">SIGN IN</button>
+  </form>
+  <button class="submit" id="submit">CREATE ACCOUNT</button>
 </body>
 </html>
 <script>
-   var log = false;
-  const login = (event) => {
-    
-    event.preventDefault();
-    let form = document.getElementById("loinform");
-    let Email = form.UsearEmail.value;
-    let Password = form.UserPassword.value;
-    let Users = JSON.parse(localStorage.getItem("Users")) || [];
-    // console.log(Users);
+var log = false;
+const login = (event) => {
+  
+  event.preventDefault();
+  let form = document.getElementById("loginform");
+  let Email = form.UsearEmail.value;
+  let Password = form.UserPassword.value;
+  let Users = JSON.parse(localStorage.getItem("Users")) || [];
+  // console.log(Users);
 
-    for (let i = 0; i < Users.length; i++) {
-      // console.log(Users);
-      if (Users[i].Email == Email && Users[i].Password == Password) {
-        alert("login Successful!");
-        localStorage.setItem("User", JSON.stringify(Users[i]));
-        log = true;
-        break;
-      }
+  for (let i = 0; i < Users.length; i++) {
+    // console.log(Users);
+    if (Users[i].Email == Email && Users[i].Password == Password) {
+      alert("login Successful!");
+      localStorage.setItem("User", JSON.stringify(Users[i]));
+      log = true;
+      break;
     }
-    if (log == false) {
-      alert("login failed!");
-    }
-  };
+  }
+  if (log == false) {
+    alert("login failed!");
+  }
+};
 
 const movetoregister=()=>{
-  window.location.href="signup.html"
+window.location.href="signup.html"
 }
 
-  document.getElementById("submit").addEventListener("click",movetoregister)
+document.getElementById("submit").addEventListener("click",movetoregister)
 </script>

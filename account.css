@@ -1,0 +1,56 @@
+#Top_section{
+    text-align: center;
+    margin-top: 220px;
+}
+#log_out{
+    height: 35px;
+    letter-spacing: 0.3em;
+    border: 1px solid #e8e8e1;
+    background-color: white;
+    cursor: pointer;
+}
+#Top_section h1{
+    font-family: Tiemann,serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1;
+    text-transform: uppercase;
+    
+}
+#acc_info{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#acc_info div{
+    width: 40%;
+    /* border: 1px solid red; */
+}
+#Top_section h2{
+    font-family: Tiemann,serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+#user_info h3{
+    font-family: Tiemann,serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+#acc_info p{
+    font-family:  Futura, sans-serif;
+    font: 16px;
+    margin: 0px 0ox 15px;
+}
+#user_name{
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: .75em;
+    margin-bottom: 10px;
+}
