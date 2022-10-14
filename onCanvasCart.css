@@ -1,0 +1,21 @@
+body{
+    display: flex;
+}
+img{
+    height: 150px;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  .dummyBtn{
+    display: inline-block;
+    width: 100px;
+  }
+
+  .sideCart{
+    background-color: #f0f0f0;
+  }

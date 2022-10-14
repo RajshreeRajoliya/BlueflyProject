@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart on the Fly</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./onCanvasCart.css">
 </head>
 <body>
-    
+    <div class="dummyBtn"><button >show cart</button></div>
+        <div id="wrapper-sideCart">
+            <div class="sideCart">
+                <div class="head-of-slider">
+                    <h2 id="cart-title">Cart</h2>
+                    <div class="closeBtn">
+                        <span class="material-symbols-outlined">
+                            close
+                            </span>
+                    </div>
+                </div>
+                <div id="cartList">
+                    <!-- <div class="cart-products">
+                        <div class="side-image one-third">
+                            <a href="#"><img src="https://picsum.photos/150" alt=""></a>
+                        </div>
+                        <div class="side-cart-details two-third">
+                            
+                            <div class="wrap-title">
+                                <h3 class="side-title">A long title that will wrap below</h3>
+                                <p class="side-clr-size">Red/small</p>
+                            </div>
+                            <div class="side-input-price-div">
+                                <div class="input-btn one-half">
+                                    <button class="minus">-</button>
+                                    <input type="text" class="side-qty">
+                                    <button class="plus">+</button>
+                                </div>
+                                <div class="side-price-individual one-half">
+                                    <p>$</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div> -->
+                </div>
+                <div id="side-cart-footer">
+                    <div class="subtotal">
+                        <div>subtotal</div>
+                        <div id="cartTotal">$</div>
+                    </div>
+                    <div class="small-text">Shipping, taxes, and discounts codes calculated at checkout.</div>
+                    <button id="side-cart-btn">CHECK OUT</button>
+                </div>
+                
+            </div>
+        </div>
 </body>
 </html>
+<script src="./onCanvasCart.js"></script>
