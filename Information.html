@@ -141,18 +141,18 @@
 
         <div id="text">
             <p>Subtotal</p>
-            <h2>$824.50</h2>
+            <p id="total-before-promo"></p>
         </div>
 
         <div id="text2">
             <p>Shipping</p>
-            <h2>Calculated at next step</h2>
+            <p>Calculated at next step</p>
         </div>
         <hr>
 
         <div id="text3">
-            <h2>Total</h2>
-            <h1>$2748</h1>
+            <h3>Total</h3>
+            <h3 id="total-after-promo"></h3>
         </div>
      </div>
         
@@ -164,6 +164,12 @@
 </body>
 </html>
 <script>
+    var sum = localStorage.getItem("sum") || 0;
+    var totalAfterPromo = sum;
+    console.log(sum);
+    document.getElementById("total-before-promo").innerText =  `$${sum}`;
+    var final = document.getElementById("total-after-promo");
+    final.innerText = `$${totalAfterPromo}`;
   document.getElementById("gotoshipping").addEventListener("click",gotoshipping);
   function gotoshipping(){
     window.location.href="shipping.html";
@@ -173,6 +179,25 @@
   document.getElementById("rtnCart").addEventListener("click",gotoCart);
   function gotoCart(){
     window.location.href="cart.html";
+  }
+
+  var submit = document.querySelector(".apply_btn2");
+  submit.onclick = updateDiscount;
+  
+  function updateDiscount(){
+    var promo = document.querySelector(".apply_btn1");
+    console.log(promo.value);
+    if(promo.value === "bf"){
+        console.log("applied");
+        sum = +sum;
+        sum = sum - (sum * 20/100);
+        sum = Math.round(sum * 100)/100;
+        console.log(sum );
+        final.innerText = `$${sum}`;
+    }else{
+        alert("Promo Code not Valid");
+    }
+
   }
 
 </script>
