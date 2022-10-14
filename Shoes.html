@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+    <link rel="stylesheet" href="./onCanvasCart.css">
     <title>Shoes</title>
     
     <style>
@@ -1536,6 +1536,29 @@ border: 2px solid rebeccapurple;
       </div>
   </div>
   </div>
+  <div class="sideCart">
+    <div class="head-of-slider">
+        <h2 id="cart-title">Cart</h2>
+        <div class="closeBtn">
+            <span class="material-symbols-outlined">
+                close
+                </span>
+        </div>
+    </div>
+    <div class="wrapper-fixed-inner">
+        <div id="cartList">
+        </div>
+        <div id="side-cart-footer">
+            <div class="subtotal">
+                <div>subtotal</div>
+                <div id="cartTotal">$</div>
+            </div>
+            <div class="small-text">Shipping, taxes, and discounts codes calculated at checkout.</div>
+            <button id="side-cart-btn">CHECK OUT</button>
+        </div>
+    </div>
+    
+</div>
         <div id="bigcontainer">
             <div id="left">
                 <h3 style="cursor: pointer;">Category</h3>
@@ -1655,7 +1678,7 @@ border: 2px solid rebeccapurple;
 </body>
 
 </html>
-<script>
+<script src="./onCanvasCart.js">
     var data=[
        {
          image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2017472_large.jpg?v=1664551557",
