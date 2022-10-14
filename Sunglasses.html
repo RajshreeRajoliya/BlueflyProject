@@ -1561,10 +1561,10 @@ border: 2px solid rebeccapurple;
                 <h3> Price </h3>
                 <hr align="left">
                   <div>
-                  <input type="checkbox" value="less100" class="theClass" onclick="funprice1()"/>less than $.200 <br>
-                  <input type="checkbox"  value="100to200" class="theClass" onclick="funprice2()"/>$.200 to $.500<br>
-                  <input type="checkbox" value="upto500" class="theClass" onclick="funprice3()"/>$.500 to $1000<br>
-                  <input type="checkbox" value="less1000" class="theClass" onclick="funprice4()"/>greater than $.1000<br>
+                  <input type="checkbox" value="less100" class="theClass" onclick="funprice1()"/>less than $200 <br>
+                  <input type="checkbox"  value="100to200" class="theClass" onclick="funprice2()"/>$200 to $500<br>
+                  <input type="checkbox" value="upto500" class="theClass" onclick="funprice3()"/>$500 to $1000<br>
+                  <input type="checkbox" value="less1000" class="theClass" onclick="funprice4()"/>greater than $1000<br>
                   </div>
             </div>
             <div id="smallcontainer">
@@ -1872,7 +1872,7 @@ border: 2px solid rebeccapurple;
 
            var div4=document.createElement("div");
            var price=document.createElement("p");
-           price.innerText=`$.${ele.price}`;
+           price.innerText=`$${ele.price}`;
            var strike=document.createElement("p");
            strike.innerText=ele.strike;
            strike.style.textDecoration="line-through"
