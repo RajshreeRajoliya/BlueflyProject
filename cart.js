@@ -293,5 +293,5 @@ function continueShopping(){
 }
 
 function gotoCheckout(){
-    location.href = "information.html"
+   window.location.href = "Information.html"
 }

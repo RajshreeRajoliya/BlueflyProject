@@ -1,0 +1,234 @@
+#left{
+    width: 70%;
+    height: 1000px;
+    /* border: 2px solid crimson; */
+}
+
+#logo{
+ /* border: 2px solid black; */
+ width: 80%;
+ margin: auto;
+ padding: 0 15px;   
+ margin-top: 30px;
+}
+
+#line1{
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+#checkout{
+    border: 1px solid black;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.shoppay{
+    width: 30%;
+    background-color: rgb(90, 49, 244);
+    border-radius: 5px;
+    
+}
+
+.paypal{
+    width: 200px;
+    background-color: rgb(255, 196, 57);
+    border-radius: 5px;
+}
+
+.gpay{
+    
+    background-color: black;
+    border-radius: 5px;
+}
+
+#or{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact_info{
+    /* border: 2px solid rebeccapurple; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.login{
+    display: block;
+    float: right;
+}
+
+#email{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+}
+
+.emailbtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#offers{
+    /* border: 2px solid brown; */
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+#offers > p {
+    margin-left: 10px;
+}
+
+#title{
+    width: 80%;
+    margin: auto;
+}
+
+#name{
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.ht{
+    height: 40px;
+    border-radius: 5px;
+}
+
+#address{
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.ht1{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#apartment{
+     margin: auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.ht2{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#zip_code{
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.city{
+    height: 40px;
+    margin-left: -50px;
+    border-radius: 5px;
+}
+
+.state{
+    height: 40px;
+    border-radius: 5px;
+}
+
+.zip{
+    height: 40px;
+    margin-right: -60px;
+    border-radius: 5px;
+}
+
+#phone{
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.number{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#footer{
+     margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_button{
+    
+    display: flex;
+    float: right;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding-top: 15px;
+    width: 150px;
+    height: 55px;
+}
+
+#main{
+    display: flex;
+}
+
+#right{
+    width: 40%;
+    height: 1000px;
+    padding: 50px;
+    background-color: rgb(250, 250, 250);
+}
+
+#apply{
+    /* border: 2px solid black; */
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply_btn1{
+  height: 40px;
+  width: 60%;
+}
+
+.apply_btn2{
+  height: 40px;
+  width: 20%;
+  background-color: black;
+  color: white;
+  
+}
+
+#text{
+    display: flex;
+    justify-content: space-between;
+}
+
+#text2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#text3{
+    display: flex;
+    justify-content: space-between;
+}

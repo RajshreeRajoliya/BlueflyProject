@@ -11,6 +11,547 @@
     
     <style>
       
+#navbar{
+    
+    height: 130px;
+    width: 100%;
+    background-color: white;
+    position:relative;
+    font-family: 'Marcellus', serif;
+    
+}
+#navbar{
+    top: 0px;
+}
+#navtop{
+   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-family: 'Marcellus', serif;
+}
+#blank{
+   
+    width: 30%;
+}
+#logo img{
+    height: 32px;
+    width:200px;
+    /* border: 5px solid palevioletred; */
+}
+#third{
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    padding-right: 30px;
+    margin-top:-10px;
+}
+#third>div:first-child{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;   
+    display: flex;
+    font-size: 14px;
+    padding-top: 5px;
+    /* margin-top: 10px; */
+}
+#third>div:first-child p {
+    margin-top: 10px;
+}
+#third > div:first-child img{
+    width: 26px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px
+}
+
+#user img{
+    width: 28px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: 25px
+}
+
+#bag img{
+    width: 28px;
+    height: 22px;
+    margin-top: 16px;
+    margin-left: 25px
+}
+
+#navbottom{
+    /* border: 5px solid teal; */
+    display: flex;
+    justify-content: space-evenly;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.2em;
+    padding-top: 15px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#navbottom > div{
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 7.5px 15px;
+    white-space: nowrap;
+    color: #000;
+}
+/* #navbottom > div:hover{
+
+    border-bottom: 2px solid black;
+} */
+
+#navbottom>div:last-child {
+    text-decoration: none;
+    color: red; ;
+}
+
+/* Rajshree */
+#navbottom {
+    /* margin: 10px; */
+    /* padding: 10px; */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 25px; */
+    /* font-size: 16px; */
+    /* border: 1px solid blue; */
+    margin-left: 10px;
+   
+}
+
+#navbottom>div {
+    /* border: 1px solid black; */
+    height: 40%;
+    /* align-items: center; */
+    /* vertical-align: baseline; */
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+
+/* Build a Routine Drop Down starts here*/
+
+.BAR {
+    /* border: 2px solid orangered; */
+    position: relative;
+}
+
+.drop {
+    border: 1.5px solid black;
+    display: none;
+}
+
+.outside,
+.outsideSkin,
+.outsideHair,
+.outsideMakeup,
+.outsideTools,
+.outsideBath,
+.outsideSelf,
+.outsideFragrance,
+.outsideNew,
+.outsideOld {
+    background-color: white;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    /* border: 1px solid black; */
+    padding-top: 20px;
+    /* padding-top: 5px; */
+   
+}
+
+.inside {
+    /* border-top: 1px solid rgb(46, 51, 55); */
+    width: 245px;
+    margin: 10px;
+    
+}
+.outsideMakeup>.inside{
+    width:200px;
+    font-size: small;
+}
+.inside div {
+    padding: 5px;
+}
+
+.inside>div>a {
+    text-decoration: none;
+    color: black;
+}
+
+.inside div:first-child>a {
+    font-weight: 550;
+}
+
+.inside div:hover {
+    background-color: rgb(240, 238, 238);
+}
+
+.inside div:nth-child(1) {
+    margin: 10px 0px;
+}
+
+.BAR:hover .drop {
+    display: block;
+}
+
+
+/* pos for other drop Downs */
+
+.outside {
+   /* background-color: palevioletred; */
+    right: -1500%;
+    width: 1425px;
+    
+}
+
+.outsideSkin {
+    right: -382%;
+    width:1425px;
+}
+
+.outsideHair {
+    right: -630%;
+    width:1225px;
+}
+
+.outsideMakeup {
+    right: -850%;
+    width:1425px;
+}
+
+.outsideTools {
+    left: -705%;
+    width:1325px;
+}
+
+.outsideBath {
+    left: -175%;
+    width: 900px;
+    height:auto;
+}
+
+.outsideSelf {
+    left: -360%;
+    width: 1415px;
+}
+
+.outsideFragrance {
+    left: -390%;
+    width: 725px;
+}
+
+.outsideNew {
+    left: -750%;
+    width: 905px;
+}
+
+.outsideOld {
+    left: -630%;
+    width: 955px;
+}
+.srk{
+    letter-spacing: 4em;
+}
+/* Rajshree */
+.bodylast>div>img{
+    height:275px;
+    width:230px;
+    /* border:1px solid black; */
+    margin-top:50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    
+}
+
+/* .productlast{
+    border: 5px solid rebeccapurple;
+} */
+.productlast>p{
+    text-align: center;
+    color:black;
+    font-size: small;
+    text-transform: uppercase;
+}
+.productlast>p:first-child{
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+}
+
+.drop2>div>img{
+    height:150px;
+    width:180px;
+    margin-top:50px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+@media all and (min-width:480px) and (max-width:760px){
+    #navbottom{
+        display: none;
+    }
+    #navbar{
+        height: 100px;
+    }
+    #navtop{
+        margin-top: 15px;
+    }
+    #blank{
+        width: 25%;
+    }
+    #logo img{
+        height: 22px;
+        width: 100px;
+    }
+    #third{
+        padding-right: 10px;
+        margin-right: 100px;
+    }
+    #third>div:first-child{
+        font-size: 8px;
+        padding-top: 2px;
+        letter-spacing: 0.1em;
+    }
+    #third > div:first-child img{
+        width: 12px;
+        height: 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #user img{
+        width: 15px;
+        height: 12px;
+        margin-top: 12px;
+        margin-left: 5px
+    }
+
+    #bag img{
+        width: 15px;
+        height: 12px;
+        margin-top: 12px;
+        margin-left:5px
+    }
+}
+
+@media all and (min-width:120px) and (max-width:480px){
+    #navbottom{
+        display: none;
+    }
+    #navbar{
+        height: 80px;
+    }
+    #navtop{
+        margin-top: 15px;
+    }
+    #blank{
+        width: 25%;
+    }
+    #logo img{
+        height: 20px;
+        width: 100px;
+    }
+    #third{
+        padding-right: 10px;
+        margin-right: 50px;
+    }
+    #third>div:first-child{
+        font-size: 8px;
+        padding-top: 2px;
+        letter-spacing: 0em;
+    }
+    #third > div:first-child img{
+        width: 12px;
+        height: 15px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #user img{
+        width: 15px;
+        height: 12px;
+        margin-top: 12px;
+        margin-left: 5px
+    }
+
+    #bag img{
+        width: 15px;
+        height: 12px;
+        margin-top: 12px;
+        margin-left:5px
+    }
+}
+
+
+
+
+/* cart  */
+.cart {
+    border: 6px solid magenta;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    height: 200px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+.cart.active {
+    right: 0;
+}
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    scroll-behavior: smooth;
+}
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px; 
+}
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price {
+    font-weight: 500;
+}
+.cart-quantity {
+    border: 1px solid black;  
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove {
+    background-color: red;
+}
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+    gap: 30px;
+}
+.total-title {
+   font-size: 1rem;
+   font-weight: 600;
+}
+.total-price {
+  margin-left: 00.5rem;
+}
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px;
+    border: none;
+    background-color: orangered;
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-buy:hover {
+    background: var(--text-color);
+}
+#close-cart{
+   position: absolute;
+   top: 1rem;
+   right: 0.8rem;
+   font-size: 2rem;
+   color: var(--text-color);
+   cursor: pointer;
+}
+.check-out {
+    text-decoration: none;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    color: white;
+    background-color: #000;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.cart-out {
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+}
+.twocolumns{
+display: flex;
+}
+.twocolumns > .col-2{
+    padding-left: 230px;
+    padding-top: 30px;
+}
+/* .col-3{
+border: 2px solid rebeccapurple;
+ 
+} */
+
+
+.container {
+    overflow: hidden;
+    position: relative;
+    /* background-color: black; */
+  }
+  
+  .container::before {
+    content: '\00a0';
+  }
+  
+  .scrolling {
+    animation: marquee 14s linear infinite;
+    display: block;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+   
+    color:white ;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to { 
+      transform: translateX(-100%);
+    }
+  }
+  *{
+        
+    font-family: Tiemann, serif;
+}
+
        .footerFirstDetails>div>img{
     height:400px;
     width:400px;
@@ -306,7 +847,688 @@
 </head>
 
 <body>
-  <div id="navbar"></div>
+  <div id="navbar">
+    <div id="navtop">
+      <div id="blank"></div>
+      <div id="logo">
+          <a href="index.html">
+          <img
+              src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243" alt="">
+          </a>
+      </div>
+      <div id="third">
+          <div><img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" alt="">
+              <p>search</p>
+          </div>
+          <div id="user">
+              <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male4-512.png" alt="">
+              </a>
+          </div>
+
+          <div id="bag">
+             
+          <a href="cart.html">
+              <img id="baglogo"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkqlJUQ75M9LTtaLLpD02FTnEO7RqUxxJu_Qx0jY7fmJZExIRM5vch5sQ_Gvpkp1lIA4&usqp=CAU"
+                  alt=""></a>
+                 
+          </div>
+
+      </div>
+  </div>
+  <div id="navbottom">
+      <div class="BAR">SHOES
+          <div class="drop">
+              <div class="outside">
+                  <div class="bodylast drop2">
+                      <div>
+                          <a href="">
+                              <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women_shoes.jpg?v=1598516516"
+                                  alt="" />
+                          </a>
+                          <div class="productlast">
+                              <p>SANDALS</p>
+                              <p> UP TO 70% Off</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="Shoes.html">WOMEN'S SHOES</a></div>
+                      <div><a href="Shoes.html">Shop All</a></div>
+                      <div><a href="Shoes.html">Boots</a></div>
+                      <div><a href="Shoes.html">Espadrilles</a></div>
+                      <div><a href="Shoes.html">Flats</a></div>
+                      <div><a href="Shoes.html">Mules & Slides</a></div>
+                      <div><a href="Shoes.html">Oxfordes & Loafers</a></div>
+                      <div><a href="Shoes.html">Pumps & Heels</a></div>
+                      <div><a href="Shoes.html">Sandals</a></div>
+                      <div><a href="Shoes.html">Slippers</a></div>
+                      <div><a href="Shoes.html">Sneakers</a></div>
+                      <div><a href="Shoes.html">Wedges</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Shoes.html">WOMEN'S DESIGNERS</a></div>
+                      <div><a href="Shoes.html">Burberry</a></div>
+                      <div><a href="Shoes.html">Chloe</a></div>
+                      <div><a href="Shoes.html">Christian Louboutin</a></div>
+                      <div><a href="Shoes.html">Dolce & Gabbana</a></div>
+                      <div><a href="Shoes.html">Giuseppe Zanotti</a></div>
+                      <div><a href="Shoes.html">Gucci</a></div>
+                      <div><a href="Shoes.html">Jimmy Choo</a></div>
+                      <div><a href="Shoes.html">Manolo Blahnik</a></div>
+                      <div><a href="Shoes.html">Prada</a></div>
+                      <div><a href="Shoes.html">Saint Laurent</a></div>
+                      <div><a href="Shoes.html">Salvatore Ferragamo</a></div>
+                      <div><a href="Shoes.html">Tod's</a></div>
+                      <div><a href="Shoes.html">Valentino</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Shoes.html">MEN'S SHOES</a></div>
+                      <div><a href="Shoes.html">Boots</a></div>
+                      <div><a href="Shoes.html">Drivers,Loafers & Slip-Ons</a></div>
+                      <div><a href="Shoes.html">Oxford & Derby Shoes</a></div>
+                      <div><a href="Shoes.html">Sandals & Flip Flops</a></div>
+                      <div><a href="Shoes.html">Slippers</a></div>
+                      <div><a href="Shoes.html">Sneakers</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Shoes.html">MEN'S DESIGNERS</a></div>
+                      <div><a href="Shoes.html">Antonio Maurizi</a></div>
+                      <div><a href="Shoes.html">Aquatalia</a></div>
+                      <div><a href="Shoes.html">Balenciaga</a></div>
+                      <div><a href="Shoes.html">Christian Louboutin</a></div>
+                      <div><a href="Shoes.html">Cole Haan</a></div>
+                      <div><a href="Shoes.html">Common Projects</a></div>
+                      <div><a href="Shoes.html">Giuseppe Zanotti</a></div>
+                      <div><a href="Shoes.html">Gucci</a></div>
+                      <div><a href="Shoes.html">Prada</a></div>
+                      <div><a href="Shoes.html">Saint Laurent</a></div>
+                      <div><a href="Shoes.html">Salvatore Ferragamo</a></div>
+                      <div><a href="Shoes.html">Tod's</a></div>
+                      <div><a href="Shoes.html">Valentino</a></div>
+                  </div>
+  
+                  <div class="bodylast">
+                      <div>
+                          <a href="">
+                              <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/SHOES-MEN.jpg?4112"
+                                  alt="" />
+                          </a>
+                          <div class="productlast">
+                              <p>Drivers,Loafers & Slip-Ons</p>
+                              <p>UP TO 60% Off</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="BAR">HANDBAGS $ ACCESSORIES
+          <div class="drop">
+              <div class="outsideSkin">
+                  <div class="bodylast drop2">
+                      <div>
+                          <a href="">
+                              <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag2.jpg?v=1598516541"
+                                  alt="" />
+                          </a>
+                          <div class="productlast">
+                              <p>Satchels</p>
+                              <p>UP TO 60% Off</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="handbag.html">ALL HANDBAGS</a></div>
+                      <div><a href="handbag.html">Shop All</a></div>
+                      <div><a href="handbag.html">Backpacks</a></div>
+                      <div><a href="handbag.html">Clutches</a></div>
+                      <div><a href="handbag.html">Crossbody Bags</a></div>
+                      <div><a href="handbag.html">Hobo Bags</a></div>
+                      <div><a href="handbag.html">Satchels</a></div>
+                      <div><a href="handbag.html">Shoulder Bags</a></div>
+                      <div><a href="handbag.html">Tote Bags</a></div>
+                      <div><a href="handbag.html">Wallets & CardHolders</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="handbag.html">TOP DESIGNERS</a></div>
+                      <div><a href="handbag.html">Balenciaga</a></div>
+                      <div><a href="handbag.html">Bottega Veneta</a></div>
+                      <div><a href="handbag.html">Burberry</a></div>
+                      <div><a href="handbag.html">Celine</a></div>
+                      <div><a href="handbag.html">Chloe</a></div>
+                      <div><a href="handbag.html">Dolce & Gabbana</a></div>
+                      <div><a href="handbag.html">Fendi</a></div>
+                      <div><a href="handbag.html">Givenchy</a></div>
+                      <div><a href="handbag.html">Gucci</a></div>
+                      <div><a href="handbag.html">Prada</a></div>
+                      <div><a href="handbag.html">Prada</a></div>
+                      <div><a href="handbag.html">Saint Laurent</a></div>
+                      <div><a href="handbag.html">Salvatore Ferragamo</a></div>
+                      <div><a href="handbag.html">Stello McCartney</a></div>
+                      <div><a href="handbag.html">Valentino</a></div>
+                      <div><a href="handbag.html">Valentino by Mario Valentino</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="handbag.html">PRE-OWNED</a></div>
+                      <div><a href="handbag.html">Shop All</a></div>
+                      <div><a href="handbag.html">Bucket Bags</a></div>
+                      <div><a href="handbag.html">Clutches</a></div>
+                      <div><a href="handbag.html">Crossbody Bags</a></div>
+                      <div><a href="handbag.html">Hobo Bags</a></div>
+                      <div><a href="handbag.html">Satchels</a></div>
+                      <div><a href="handbag.html">Shoulder Bags</a></div>
+                      <div><a href="handbag.html">Tote Bags</a></div>
+                      <div><a href="handbag.html">Wallets & CardHolders</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="handbag.html">ACCESSORIES</a></div>
+                      <div><a href="handbag.html">Bag Charms,Straps, & accessories</a></div>
+                      <div><a href="handbag.html">Belts</a></div>
+                      <div><a href="handbag.html">Cosmetic Bags</a></div>
+                      <div><a href="handbag.html">Hats</a></div>
+                      <div><a href="handbag.html">Gloves</a></div>
+                      <div><a href="handbag.html">Scarves & Wraps</a></div>
+                      <div><a href="handbag.html">Optical & Reading Glass</a></div>
+                      <div><a href="handbag.html">Sunglasses</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="BAR">DESIGNERS
+          <div class="drop">
+              <div class="outsideHair">
+                  <div class="bodylast drop2">
+                      <div><a href="">
+                              <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/handbag.jpg?v=1598514963"
+                                  alt="" />
+                          </a>
+                          <div class="productlast">
+                              <p>Gucci</p>
+                              <p>UP TO 64% Off</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="Designer.html">FEATURED DESIGNERS</a></div>
+                      <div><a href="Designer.html">Balenciaga</a></div>
+                      <div><a href="Designer.html">Burberry</a></div>
+                      <div><a href="Designer.html">Celine</a></div>
+                      <div><a href="Designer.html">Chloe</a></div>
+                      <div><a href="Designer.html">Christian Louboutin</a></div>
+                      <div><a href="Designer.html">Dior</a></div>
+                      <div><a href="Designer.html">Dolce & Gabbana</a></div>
+                      <div><a href="Designer.html">Fendi</a></div>
+                      <div><a href="Designer.html">Giuseppe Zanotti</a></div>
+                      <div><a href="Designer.html">Givenchy</a></div>
+                      <div><a href="Designer.html">Gucci</a></div>
+                      <div><a href="Designer.html">Jimmy Choo</a></div>
+                      <div><a href="Designer.html">Kate Spade</a></div>
+                      <div><a href="Designer.html">Manolo Blahnik</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Designer.html"></a></div>
+                      <div><a href="Designer.html">Miu Miu</a></div>
+                      <div><a href="Designer.html">Moncler</a></div>
+                      <div><a href="Designer.html">Moose knuckles</a></div>
+                      <div><a href="Designer.html">Moschino</a></div>
+                      <div><a href="Designer.html">Prada</a></div>
+                      <div><a href="Designer.html">Robertio Cavalli</a></div>
+                      <div><a href="Designer.html">Saint Laurent</a></div>
+                      <div><a href="Designer.html">Salvatore Ferragamo</a></div>
+                      <div><a href="Designer.html">Stella McCartney</a></div>
+                      <div><a href="Designer.html">Stuart Weitzman</a></div>
+                      <div><a href="Designer.html">Tod's</a></div>
+                      <div><a href="Designer.html">Tom Ford</a></div>
+                      <div><a href="Designer.html">Valentino</a></div>
+                      <div><a href="Designer.html">Versace</a></div>
+                  </div>
+  
+                  <div class="inside ">
+                      <div><a href="">BY A-Z</a></div>
+                      <div class="srk"><a href="Designer.html">ABCD</a></div>
+                      <div class="srk"><a href="Designer.html">EFGH</a></div>
+                      <div class="srk"><a href="Designer.html">IJKL</a></div>
+                      <div class="srk"><a href="Designer.html">MNOP</a></div>
+                      <div class="srk"><a href="Designer.html">QRST</a></div>
+                      <div class="srk"><a href="Designer.html">UVWX</a></div>
+                      <div class="srk"><a href="Designer.html">YZ#</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="BAR ">WOMEN
+          <div class="drop check">
+              <div class="outsideMakeup">
+                  <div class="bodylast drop2">
+                      <div>
+                          <a href="#">
+                              <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/women.jpg?v=1598516476"
+                                  alt="" />
+                          </a>
+                          <div class="productlast">
+                              <p>Dresses</p>
+                              <p>UP TO 80% Off</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="sandals.html">CLOTHING</a></div>
+                      <div><a href="sandals.html">Activewear</a></div>
+                      <div><a href="sandals.html">Dresses</a></div>
+                      <div><a href="sandals.html">Jeans & Denim</a></div>
+                      <div><a href="sandals.html">Jumpsuits & Rompers</a></div>
+                      <div><a href="sandals.html">Lingerie & Hosiery</a></div>
+                      <div><a href="sandals.html">Loungewear & Sleepwear</a></div>
+                      <div><a href="sandals.html">Pants & Leggings</a></div>
+                      <div><a href="sandals.html">Shorts</a></div>
+                      <div><a href="sandals.html">Skirts</a></div>
+                      <div><a href="sandals.html">Sweaters</a></div>
+                      <div><a href="sandals.html">Sweatshirts & Hoodies</a></div>
+                      <div><a href="sandals.html">Swimwear & Coverups</a></div>
+                      <div><a href="sandals.html">Tops & Tees</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="sandals.html">HANDBAGS</a></div>
+                      <div><a href="sandals.html">Shop All</a></div>
+                      <div><a href="sandals.html">Backpacks</a></div>
+                      <div><a href="sandals.html">Bucket Bags</a></div>
+                      <div><a href="sandals.html">Clutches</a></div>
+                      <div><a href="sandals.html">Crossbody Bags</a></div>
+                      <div><a href="sandals.html">Hobo Bags</a></div>
+                      <div><a href="sandals.html">Satchels</a></div>
+                      <div><a href="sandals.html">Shoulder Bags</a></div>
+                      <div><a href="sandals.html">Tote Bags</a></div>
+                      <div><a href="sandals.html">Wallets & CardHolders</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="sandals.html">SHOES</a></div>
+                      <div><a href="sandals.html">Shop All</a></div>
+                      <div><a href="sandals.html">Boots</a></div>
+                      <div><a href="sandals.html">Espadrilles</a></div>
+                      <div><a href="sandals.html">Flats</a></div>
+                      <div><a href="sandals.html">Mules & Slides</a></div>
+                      <div><a href="sandals.html">Oxfordes & Loafers</a></div>
+                      <div><a href="sandals.html">Pumps & Heels</a></div>
+                      <div><a href="sandals.html">Sandals</a></div>
+                      <div><a href="sandals.html">Slippers</a></div>
+                      <div><a href="sandals.html">Sneakers</a></div>
+                      <div><a href="sandals.html">Wedges</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="sandals.html">JEWELRY</a></div>
+                      <div><a href="sandals.html">Shop All</a></div>
+                      <div><a href="sandals.html">Bracelets</a></div>
+                      <div><a href="sandals.html">Brooches & Pins</a></div>
+                      <div><a href="sandals.html">Earrings</a></div>
+                      <div><a href="sandals.html">Necklaces</a></div>
+                      <div><a href="sandals.html">Rings</a></div>
+                      <div><a href="sandals.html">Watches</a></div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="sandals.html">ACCESSORIES</a></div>
+                      <div><a href="sandals.html">Bag Charms,Straps & accessories</a></div>
+                      <div><a href="sandals.html">Belts</a></div>
+                      <div><a href="sandals.html">Cosmetic Bags</a></div>
+                      <div><a href="sandals.html">Hats</a></div>
+                      <div><a href="sandals.html">Gloves</a></div>
+                      <div><a href="sandals.html">Scarves & Wraps</a></div>
+                      <div><a href="sandals.html">Optical & Reading Glass</a></div>
+                      <div><a href="sandals.html">Sunglasses</a></div>
+                      <div><a href="sandals.html">Pens</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="BAR">MEN
+          <div class="drop">
+              <div class="outsideTools">
+                  <div class="bodylast">
+                      <div>
+                          <a href="">
+                              <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/men.jpg?v=1598516498"
+                                  alt="" />
+                          </a>
+                          <div class="productlast">
+                              <p>Dress shirts</p>
+                              <p>UP TO 70% Off</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="Mens.html">CLOTHING</a></div>
+                      <div><a href="Mens.html">Activewear</a></div>
+                      <div><a href="Mens.html">Casual Button-Down Shirts</a></div>
+                      <div><a href="Mens.html">Coats & Jackets</a></div>
+                      <div><a href="Mens.html">Dress Shirts</a></div>
+                      <div><a href="Mens.html">Jeans & Denim</a></div>
+                      <div><a href="Mens.html">Pants</a></div>
+                      <div><a href="Mens.html">Polo Shirts</a></div>
+                      <div><a href="Mens.html">Shorts</a></div>
+                      <div><a href="Mens.html">Sport Coats & Blazers</a></div>
+                      <div><a href="Mens.html">Suits & Separate's</a></div>
+                      <div><a href="Mens.html">Sweaters</a></div>
+                      <div><a href="Mens.html">Sweatshirts & Hoodies</a></div>
+                      <div><a href="Mens.html">Swimwear</a></div>
+                      <div><a href="Mens.html">T-shirts</a></div>
+                      <div><a href="Mens.html">UnderWear & Socks</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Mens.html">SHOES</a></div>
+                      <div><a href="Mens.html">Boots</a></div>
+                      <div><a href="Mens.html">Drivers,Loafers & Slip-Ons</a></div>
+                      <div><a href="Mens.html">Oxford & Derby Shoes</a></div>
+                      <div><a href="Mens.html">Sandals & Flip Flops</a></div>
+                      <div><a href="Mens.html">Slippers</a></div>
+                      <div><a href="Mens.html">Sneakers</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Mens.html">ACCESSORIES</a></div>
+                      <div><a href="Mens.html">Shop All</a></div>
+                      <div><a href="Mens.html">Bag & Backpacks</a></div>
+                      <div><a href="Mens.html">Belts</a></div>
+                      <div><a href="Mens.html">Hats,Gloves & Scarves</a></div>
+                      <div><a href="Mens.html">Optical & Reading Glass</a></div>
+                      <div><a href="Mens.html">Sunglasses</a></div>
+                      <div><a href="Mens.html">Ties & Pocket Squares</a></div>
+                      <div><a href="Mens.html">Wallets & Cardholders</a></div>
+                      <div><a href="Mens.html">Pens</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Mens.html">JEWELRY</a></div>
+                      <div><a href="Mens.html">Bracelets</a></div>
+                      <div><a href="Mens.html">Cufflinks</a></div>
+                      <div><a href="Mens.html">Watches</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="BAR">SUNGLASSES
+          <div class="drop">
+              <div class="outsideBath">
+                  <div class="bodylast drop2">
+                      <div>
+                          <a href="#">
+                          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/sunglasses_df9c0648-8d79-459a-ad8d-a7c1869f40db.jpg?v=1598516553"
+                              alt="" /></a>
+                          <div class="productlast">
+                              <p>Sunglasses</p>
+                              <p>UP TO 80% Off</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="#">WOMEN'S SUNGLASSES</a></div>
+                      <div><a href="Sunglasses.html">Shop All</a></div>
+                      <div><a href="Sunglasses.html">Burberry</a></div>
+                      <div><a href="Sunglasses.html">Chanel</a></div>
+                      <div><a href="Sunglasses.html">Chloe</a></div>
+                      <div><a href="Sunglasses.html">Dior</a></div>
+                      <div><a href="Sunglasses.html">Dolce & Gabbana</a></div>
+                      <div><a href="Sunglasses.html">Fendi</a></div>
+                      <div><a href="Sunglasses.html">Givenchy</a></div>
+                      <div><a href="Sunglasses.html">Gucci</a></div>
+                      <div><a href="Sunglasses.html">Jimmy Choo</a></div>
+                      <div><a href="Sunglasses.html">Miu Miu</a></div>
+                      <div><a href="Sunglasses.html">Prada</a></div>
+                      <div><a href="Sunglasses.html">Saint Laurent</a></div>
+                      <div><a href="Sunglasses.html">Stella McCartney</a></div>
+                      <div><a href="Sunglasses.html">Tom Ford</a></div>
+                      <div><a href="Sunglasses.html">Valentino</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Sunglasses.html">MEN'S DESIGNERS</a></div>
+                      <div><a href="Sunglasses.html">Shop All</a></div>
+                      <div><a href="Sunglasses.html">Bottega Veneta</a></div>
+                      <div><a href="Sunglasses.html">Burberry</a></div>
+                      <div><a href="Sunglasses.html">Cartier</a></div>
+                      <div><a href="Sunglasses.html">Costa Del Mar</a></div>
+                      <div><a href="Sunglasses.html">Dior</a></div>
+                      <div><a href="Sunglasses.html">Dolce & Gabbana</a></div>
+                      <div><a href="Sunglasses.html">Ermenegildo Zegna</a></div>
+                      <div><a href="Sunglasses.html">Givenchy</a></div>
+                      <div><a href="Sunglasses.html">Gucci</a></div>
+                      <div><a href="Sunglasses.html">Persol</a></div>
+                      <div><a href="Sunglasses.html">Prada</a></div>
+                      <div><a href="Sunglasses.html">Ray Ban</a></div>
+                      <div><a href="Sunglasses.html">Saint Laurent</a></div>
+                      <div><a href="Sunglasses.html">Tom Ford</a></div>
+                      <div><a href="Sunglasses.html">Versace</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="BAR">JEWELRY & WATCHES
+          <div class="drop">
+              <div class="outsideSelf">
+                  <div class="bodylast">
+                      <div>
+                          <a href="">
+                          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/watch.jpg?v=1598517674"
+                              alt="" /></a>
+                          <div class="productlast">
+                              <p>Watches</p>
+                              <p>UP TO 80% Off</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="jewellery.html">JEWELRY</a></div>
+                      <div><a href="jewellery.html">Shop All</a></div>
+                      <div><a href="jewellery.html">Bracelets</a></div>
+                      <div><a href="jewellery.html">Bracelets</a></div>
+                      <div><a href="jewellery.html">Brooches & Pins</a></div>
+                      <div><a href="jewellery.html">Earrings</a></div>
+                      <div><a href="jewellery.html">Necklaces</a></div>
+                      <div><a href="jewellery.html">Rings</a></div>
+                      <div><a href="jewellery.html">Watches</a></div>
+                      <div><a href="jewellery.html">Men's Jewelry</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="jewellery.html">TOP DESIGNER WATCHES A-J</a></div>
+                      <div><a href="jewellery.html">Anne Klein</a></div>
+                      <div><a href="jewellery.html">Armani</a></div>
+                      <div><a href="jewellery.html">Baume & Mercier</a></div>
+                      <div><a href="jewellery.html">Bulova</a></div>
+                      <div><a href="jewellery.html">Bomberg</a></div>
+                      <div><a href="jewellery.html">Breitiling</a></div>
+                      <div><a href="jewellery.html">Briston</a></div>
+                      <div><a href="jewellery.html">Calvin Klein</a></div>
+                      <div><a href="jewellery.html">Cartier</a></div>
+                      <div><a href="jewellery.html">CCCP</a></div>
+                      <div><a href="jewellery.html">Casio</a></div>
+                      <div><a href="jewellery.html">Certina</a></div>
+                      <div><a href="jewellery.html">Charriol</a></div>
+                      <div><a href="jewellery.html">Christian Dior</a></div>
+                      <div><a href="jewellery.html">Christian Van Sant</a></div>
+                      <div><a href="jewellery.html">Citizen</a></div>
+                      <div><a href="jewellery.html">Coach</a></div>
+                      <div><a href="jewellery.html">Cvstos</a></div>
+                      <div><a href="jewellery.html">Diesel</a></div>
+                      <div><a href="jewellery.html">Eterna</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="jewellery.html"></a></div>
+                      <div><a href="jewellery.html"></a></div>
+                      <div><a href="jewellery.html">Ferrari</a></div>
+                      <div><a href="jewellery.html">Fossil</a></div>
+                      <div><a href="jewellery.html">Frederique Constant</a></div>
+                      <div><a href="jewellery.html">Gevril</a></div>
+                      <div><a href="jewellery.html">Glam Rock</a></div>
+                      <div><a href="jewellery.html">Glycine</a></div>
+                      <div><a href="jewellery.html">Gucci</a></div>
+                      <div><a href="jewellery.html">Hamilton</a></div>
+                      <div><a href="jewellery.html">Hugo Boss</a></div>
+                      <div><a href="jewellery.html">Ingersoll</a></div>
+                      <div><a href="jewellery.html">Invicta</a></div>
+                      <div><a href="jewellery.html">ISW</a></div>
+                      <div><a href="jewellery.html">Jacques Lemans</a></div>
+                      <div><a href="jewellery.html">Jaquet Droz</a></div>
+                      <div><a href="jewellery.html">Jean Paul Gaultier</a></div>
+                      <div><a href="jewellery.html">Jivago</a></div>
+                      <div><a href="jewellery.html">Jovial</a></div>
+                      <div><a href="jewellery.html">Juicy Couture</a></div>
+                      <div><a href="jewellery.html">Just Cavalli</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="jewellery.html">TOP DESIGNER WATCHES K-Z</a></div>
+                      <div><a href="jewellery.html">Kate Spade</a></div>
+                      <div><a href="jewellery.html">Longines</a></div>
+                      <div><a href="jewellery.html">Marc Jacobs</a></div>
+                      <div><a href="jewellery.html">Mathey Tissot</a></div>
+                      <div><a href="jewellery.html">Michele</a></div>
+                      <div><a href="jewellery.html">Mido</a></div>
+                      <div><a href="jewellery.html">Movado</a></div>
+                      <div><a href="jewellery.html">Nautica</a></div>
+                      <div><a href="jewellery.html">Nixon</a></div>
+                      <div><a href="jewellery.html">Oceanaut</a></div>
+                      <div><a href="jewellery.html">Porsche</a></div>
+                      <div><a href="jewellery.html">Rado</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="jewellery.html"></a></div>
+                      <div><a href="jewellery.html"></a></div>
+                      <div><a href="jewellery.html">Red Line</a></div>
+                      <div><a href="jewellery.html">Revue Thommen</a></div>
+                      <div><a href="jewellery.html">Roberto Bianci</a></div>
+                      <div><a href="jewellery.html">Seapro</a></div>
+                      <div><a href="jewellery.html">Sector</a></div>
+                      <div><a href="jewellery.html">Seiko</a></div>
+                      <div><a href="jewellery.html">Skagen</a></div>
+                      <div><a href="jewellery.html">Spinnaker</a></div>
+                      <div><a href="jewellery.html">Suunto</a></div>
+                      <div><a href="jewellery.html">Tag Heuer</a></div>
+                      <div><a href="jewellery.html">Timex</a></div>
+                      <div><a href="jewellery.html">Swarovski</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="BAR">UNDER $ 50
+          <div class="drop">
+              <div class="outsideFragrance">
+                  <div class="inside">
+                      <div><a href="Under.html">SHOP BY PRICEPOINT</a></div>
+                      <div><a href="Under.html">Under $25</a></div>
+                      <div><a href="Under.html">$25-$49.99</a></div>
+                      <div><a href="Under.html">Shop All Under $50</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Under.html">SHOP BY CATEGORY</a></div>
+                      <div><a href="Under.html">Women</a></div>
+                      <div><a href="Under.html">Shoes</a></div>
+                      <div><a href="Under.html">Handbags & Accessories</a></div>
+                      <div><a href="Under.html">jewelry</a></div>
+                      <div><a href="Under.html">Men</a></div>
+                      <div><a href="Under.html">Kids</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="BAR">BEAUTY
+          <div class="drop">
+              <div class="outsideNew">
+                  <div class="inside">
+                      <div><a href="Beauty.html">FRAGRANCE</a></div>
+                      <div><a href="Beauty.html">Shop All</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Beauty.html">SKINCARE</a></div>
+                      <div><a href="Beauty.html">Shop All</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="Beauty.html">BODYCARE</a></div>
+                      <div><a href="Beauty.html">Shop All</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="BAR">CLEARENCE
+          <div class="drop">
+              <div class="outsideOld">
+                  <div class="bodylast">
+                      <div>
+                          <a href="">
+                          <img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/clearance_8fa5acf3-7405-41aa-8c98-b0891649c9ab.jpg?v=1598516564"
+                              alt="" /></a>
+                          <div class="productlast">
+                              <p>CLEARENCE</p>
+                              <p>70-90% Off</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="inside">
+                      <div><a href="clearance.html">WOMEN'S</a></div>
+                      <div><a href="clearance.html">Accessories</a></div>
+                      <div><a href="clearance.html">Activewear</a></div>
+                      <div><a href="clearance.html">Coats & Jackets</a></div>
+                      <div><a href="clearance.html">Dresses</a></div>
+                      <div><a href="clearance.html">Handbags</a></div>
+                      <div><a href="clearance.html">Jeans & Denim</a></div>
+                      <div><a href="clearance.html">Jewelry</a></div>
+                      <div><a href="clearance.html">Lingerie & Hosiery</a></div>
+                      <div><a href="clearance.html">Pants & Leggings</a></div>
+                      <div><a href="clearance.html">Shoes</a></div>
+                      <div><a href="clearance.html">Sunglasses</a></div>
+                      <div><a href="clearance.html">Swimwear</a></div>
+                      <div><a href="clearance.html">Tops</a></div>
+                      <div><a href="clearance.html">Watches</a></div>
+                  </div>
+  
+                  <div class="inside">
+                      <div><a href="clearance.html">MEN's</a></div>
+                      <div><a href="clearance.html">Accessories</a></div>
+                      <div><a href="clearance.html">Coats & Jackets</a></div>
+                      <div><a href="clearance.html">Dress Shirts</a></div>
+                      <div><a href="clearance.html">Pants</a></div>
+                      <div><a href="clearance.html">Shoes</a></div>
+                      <div><a href="clearance.html">Suits & Separates</a></div>
+                      <div><a href="clearance.html">Sunglasses</a></div>
+                      <div><a href="clearance.html">Sweaters</a></div>
+                      <div><a href="clearance.html">T-shirts</a></div>
+                      <div><a href="clearance.html">Watches</a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
         <div id="bigcontainer">
             <div id="left">
                 <h3 style="cursor: pointer;">Category</h3>
@@ -649,12 +1871,22 @@
            var saving=document.createElement("p");
            saving.innerText=ele.offer;
            saving.style.color="red"
+
+            // =====createing Cart button ====
+   var cartbtn = document.createElement("button");
+        cartbtn.innerText = "🛒 Add to Cart";
+        cartbtn.setAttribute("id", "gotToCartBtn");
+        cartbtn.addEventListener("click", function () {
+        addcartfunc(ele);
+      });
+
+
            div4.append(price,strike,saving);
            div4.style.display="flex";
            div4.style.justifyContent="space-evenly";
            
 
-           div.append(div2,image,div3,div4,); 
+           div.append(div2,image,div3,div4,cartbtn); 
 
            document.querySelector("#pdtbox").append(div);
            localStorage.setItem("shoes",JSON.stringify(data));
@@ -662,6 +1894,27 @@
        })
 
        }
+         //display--ends-above------
+
+
+     //here we use locale storage to store respected items when it is click
+    var dataArrofObj= JSON.parse(localStorage.getItem("prodList")) || [];
+  function addcartfunc(elem){
+        var exist = dataArrofObj.filter(function(el){
+            return elem.name == el.name
+        })
+        dataArrofObj.push(elem);
+            localStorage.setItem('prodList',JSON.stringify(dataArrofObj));
+            window.alert("Added to Cart");
+    }
+
+//  //LINKING MyCart Section to cart.Html
+//  document.querySelector(".goToCartBtn").addEventListener("click",sendingToCart);
+//   function sendingToCart(){
+//   window.location.href="../cart.html";
+// }
+
+
 
        function myimgfun(ele){
          console.log(ele);

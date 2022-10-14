@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
+        function geeks(msg, gfg) {
+            // var confirmBox = $("#container");
+             
+            // /* Trace message to display */
+            // confirmBox.find(".message").text(msg);
+             
+            // /* Calling function */
+            // confirmBox.find(".yes").unbind().click(function()
+            // {
+            // confirmBox.hide();
+            // });
+            // confirmBox.find(".yes").click(gfg);
+            // confirmBox.show();
+            window.location.href="index.html";
+        }
+    </script>
+    <style>
+     
+        /* Body alignment */   
+        body {
+            text-align: center;
+        }
+         
+        /* Color for h1 tag */
+        h1 {
+            color: green;
+        }
+         
+        /* Designing dialog box */
+        #container {
+            display: none;
+            background-color: purple;
+            color: white;
+            position: absolute;
+            width: 350px;
+            border-radius: 5px;
+            left: 50%;
+            margin-left: -160px;
+            padding: 16px 8px 8px;
+            box-sizing: border-box;
+        }
+         
+        /* Designing dialog box's okay button */
+        #container button {
+            background-color: yellow;
+            display: inline-block;
+            border-radius: 5px;
+            border: 2px solid gray;
+            padding: 5px;
+            text-align: center;
+            width: 60px;
+        }
+         
+        /* Dialog box message decorating */
+        #container .message {
+            text-align: left;
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Order has been placed</h1>
+    <p>OrderId:22567890315464</p>
+    <b>Thank You for Shopping With BlueFly</b>
+
+    <br><br>
+    <!-- <div id="container">
+        <div class="message">
+            Thanks for Subscription<br>A Computer
+            Science Portal for Geeks</div>
+        <button class="yes">okay</button>
+    </div> -->
+    <input id="btn3" type="button" value="ShopeMore" onclick="geeks();" />
+</body>
+<style>
+    #btn3{
+        height: 50px;
+        width: 100px;
+        background-color: rgb(202, 201, 201);
+        border-radius: 5px;
+        font-size: medium;
+    }
+    #btn3:hover{
+        background-color: aquamarine;
+    }
+</style>
+</html>
