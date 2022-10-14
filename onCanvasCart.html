@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart on the Fly</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./onCanvasCart.css">
+</head>
+<body>
+    <div id="dummyBtn"><button >show cart</button></div>
+        <!-- <div id="wrapper-sideCart"> -->
+            <div class="sideCart">
+                <div class="head-of-slider">
+                    <h2 id="cart-title">Cart</h2>
+                    <div class="closeBtn">
+                        <span class="material-symbols-outlined">
+                            close
+                            </span>
+                    </div>
+                </div>
+                <div class="wrapper-fixed-inner">
+                    <div id="cartList">
+                    </div>
+                    <div id="side-cart-footer">
+                        <div class="subtotal">
+                            <div>subtotal</div>
+                            <div id="cartTotal">$</div>
+                        </div>
+                        <div class="small-text">Shipping, taxes, and discounts codes calculated at checkout.</div>
+                        <button id="side-cart-btn">CHECK OUT</button>
+                    </div>
+                </div>
+                
+            </div>
+        <!-- </div> -->
+</body>
+</html>
+<script src="./onCanvasCart.js"></script>

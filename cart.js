@@ -211,7 +211,7 @@ function displayCart(data){
     var checkoutBtn = document.createElement("button");
     checkoutBtn.setAttribute("id", "checkout-btn");
     var aChkout = document.createElement("a");
-    aChkout.setAttribute("href", "information.html");
+    aChkout.setAttribute("href", "Information.html");
     aChkout.innerText = "CHECK OUT";
     checkoutBtn.append(aChkout);
     checkoutBtn.onclick = gotoCheckout;
@@ -293,5 +293,5 @@ function continueShopping(){
 }
 
 function gotoCheckout(){
-   window.location.href = "Information.html"
+   window.location.href = "Information.html";
 }
