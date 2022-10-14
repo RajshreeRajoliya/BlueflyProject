@@ -135,7 +135,7 @@ img{
     transform: translateY(0);
     transition: transform .85s cubic-bezier(.165,.84,.44,1) .735s,opacity .85s cubic-bezier(.165,.84,.44,1) .81s;
     border-top: 1px solid #e8e8e1;
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
 #side-cart-footer > *{
     margin-bottom: 15px;
@@ -157,10 +157,10 @@ img{
     letter-spacing: 0.2em;
 }
 #side-cart-footer div.small-text{
-    font-size: 13px;
-    font-weight: 100;
+    font-size: 14px;
+    font-weight: 300;
     color: #777777;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 h3{
     font-size: 14px;
@@ -185,6 +185,7 @@ p.side-clr-size{
     cursor: pointer;
     outline: none;
     border: none;
+    margin-bottom: 0;
 }
 #side-cart-btn::before{
     position: absolute;

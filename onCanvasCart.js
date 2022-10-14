@@ -1,5 +1,5 @@
 var prodList = JSON.parse(localStorage.getItem("prodList")) || [];
-var sum = localStorage.getItem("sum") || 0;
+
 // console.log(prodList.length);
 var plusbtns = document.getElementsByClassName("plus");
 var minusbtns = document.getElementsByClassName("minus");
@@ -8,6 +8,8 @@ var inputfields = document.getElementsByClassName("side-qty");
 // console.log(minusbtns);
 // console.log(inputfields);
 document.getElementById("dummyBtn").onclick = openDrawer;
+//remove dummyBtn and put the cartId or class here
+
 document.querySelector(".closeBtn").onclick = closeDrawer;
 document.querySelector("#side-cart-btn").onclick = gotoCheckout;
 
@@ -195,7 +197,7 @@ function increaseInput(e){
 
 function gotoCheckout(){
     // console.log("ch");
-    location.href = "#";
+    location.href = "#"; // put the link of cart.html or information.html
 }
 
 // for(var i=0; i<plusbtns.length; i++){
