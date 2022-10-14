@@ -197,7 +197,7 @@ function increaseInput(e){
 
 function gotoCheckout(){
     // console.log("ch");
-    location.href = "information.html"; // put the link of cart.html or information.html
+    location.href = "cart.html"; // put the link of cart.html or information.html
 }
 
 // for(var i=0; i<plusbtns.length; i++){
