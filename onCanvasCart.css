@@ -3,18 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     display: flex;
     font-family: Futura, sans-serif;
     letter-spacing: .025em;
     line-height: 1.6;
     font-weight: 400;
-}
+} */
 img{
-    height: 150px;
+    width: 100%;
 }
 .material-symbols-outlined {
     font-size: 2rem;
+    cursor: pointer;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -36,9 +37,27 @@ img{
     width: 400px;
     z-index: 10009;
     right: -400px;
-    transform: translate(-400px);
+    transform: translate(400px);
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0,0.2);
+    background-color: #fff;
+    transition: transform 800ms cubic-bezier(.165,.84,.44,1);
   }
+  .sideCart.clickedOpen{
+    transform: translate(-400px);
+    /* transition: 0.5s ease-in-out; */
+    /* visibility:visible; */
+}
+.opaque{
+    background-color: rgba(0, 0, 0, 0.2);
+    /* z-index: 26; */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    
+}
   .head-of-slider{
     height: 119px;
     position: absolute;
@@ -95,6 +114,14 @@ img{
     display: flex;
     /* padding-top: 15px; */
   }
+
+  .one-third{
+    width: 33.3333%;
+  }
+  .two-third{
+    width: 66.6667%;
+  }
+
   .cart-products:first-child{
     padding-top: 15px;
   }
@@ -155,10 +182,20 @@ p.side-clr-size{
     color: #fff;
     font-weight: 700;
     overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 #side-cart-btn::before{
     position: absolute;
-    
+
+}
+#side-cart-btn:hover{
+    transform: scale(1.02);
+    opacity: 0.8;
+    /* outline: none; */
+    fill: #000;
+    animation: shine;
 }
 
 .side-input-price-div{
@@ -190,6 +227,15 @@ input{
   }
   .plus{
     border: 1px solid #f7f7f7;
+  }
+  .minus:hover, .plus:hover{
+    background-color: #000;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transform: scale(1.001);
+    transition: 0.2s ease-in-out;
+    border: none;
   }
   .side-price-individual>p{
     text-align: right;
