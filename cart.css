@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: Futura,sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .025em;
+}
+#page-content{
+    padding: 1.5rem 1.7rem;
+}
+#heading{
+    text-align: center;
+}
+h1{
+    font-size: 2.7em;
+    font-family: Tiemann,serif;
+    /* line-height: 1; */
+}
+#btn-continue-shopping{
+    border-bottom: 1px solid #111;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+#btn-continue-shopping:hover::after{
+    width: 100%;
+}
+#btn-continue-shopping::after{
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #111;
+    transition: width 0.5s ease;
+    transform-origin: 0 100% ;
+}
+#wrap-row-head{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #e8e8e1;
+    --border-color: #e8e8e1;
+    margin-bottom: 1.8rem;
+    padding-bottom: 0.8rem;
+}
+#row-constant{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    
+    
+}
+#row-constant > p{
+    width: 33.3333%;
+}
+#row-constant > p:first-child{
+    text-align: right;
+}
+#row-constant > p:nth-child(2){
+    text-align: center;
+}
+#row-constant > p:last-child{
+    text-align: right;
+}
+.product-detail{
+    display: flex;
+    /* border: 0.5px solid lightgray; */
+    align-items: center;
+    /* display: table; */
+    /* table-layout: fixed; */
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 1.8rem;
+}
+.image-and-details{
+    /* display: flex;
+    flex-grow: ; */
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    width: 60%;
+}
+.image-and-details>*{
+    padding-left: 22px;
+    text-transform: uppercase;
+}
+.image{
+    width: 25%;
+}
+.details-clr-size{
+    width: 75%;
+}
+.prod-title{
+    text-transform: uppercase;
+    letter-spacing: .28em;
+    font-size: 12px;
+}
+.color-size{
+    letter-spacing: .025em;
+    font-size: 1rem;
+}
+.remove-btn{
+    padding: 8px 14px;
+    /* background-position: 150% 45%; */
+    min-width: 90px;
+    font-size: 0.75rem;
+    border: 1px solid #e8e8e1;
+    background-color: transparent;
+    line-height: 1.5;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.remove-btn > p{
+    box-sizing: border-box;
+}
+
+.price-qty-total{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    width: 40%;
+}
+.wraps-price-qty-total{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.price, .qty, .total{
+    
+    width: 33.33333%;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    font-size: 1rem;
+}
+.price{
+    text-align: right;
+}
+.qty{
+    text-align: center;
+}
+input{
+    margin: 0 auto;
+    border: 1px solid #e8e8e1;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    max-width: 80px;
+    text-align: center;
+    font-family: Futura,sans-serif;
+    letter-spacing: .0249em;
+    line-height: 1.59;
+}
+.total{
+    text-align: right;
+}
+.image, .details-clr-size{
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+img{
+    /* height: 150px; */
+    width: 100%;
+}
+#cart-total{
+    position: relative;
+    text-align: right;
+    padding-top: 1rem;
+    border-top: 1px solid #e8e8e1;
+}
+.subTotal{
+    display: flex;
+    justify-content: flex-end;
+    justify-items: right;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    margin-bottom: 0.9rem;
+}
+.subTotal > div{
+    display: table-cell;
+    vertical-align: center;
+    text-align: right;
+    flex-grow: 1;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+}
+#small-text{
+    letter-spacing: .025em;
+    font-size: 0.85em;
+    /* font-weight: 300; */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#update-btn, #checkout-btn{
+    text-align: center;
+    padding: 0.7rem 1.3rem;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    min-width: 80px;
+    border: 1px solid #e8e7e5;
+    margin-top: 1.2rem;
+    cursor: pointer;
+}
+#btns{
+    margin-bottom: 1.6rem;
+}
+#update-btn{
+    background-color: transparent;
+    color: black;
+}
+#checkout-btn{
+    position: relative;
+    background-color: black;
+    color: #fff;
+    margin-left: 0.9em;
+}
+#checkout-btn:hover{
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.25), transparent);
+    
+}
+
+
+/* 
+checkout button transition animation resources
+
+https://blog.bitsrc.io/pure-css-to-make-a-button-shine-and-gently-change-colors-over-time-5b685d9c6a7e
+
+transform: skewX(-20deg);
+
+background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.25), transparent);
+
+animation: shine 0.75s cubic-bezier(0.01, 0.56, 1, 1);
+
+*/
